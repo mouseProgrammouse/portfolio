@@ -1,0 +1,25 @@
+.main-menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  color: #3e3c42;
+  text-align: center;
+  padding: 11px 25px;
+}
+
+.main-menu a:hover {
+  background-color: #3e3c42;
+  color: #fff;
+}
+
+.main-menu a.active {
+  background-color: #3e3c42;
+  color: #fff;
+}
+
+.main-menu ul {
+  list-style-type: none;
+}
