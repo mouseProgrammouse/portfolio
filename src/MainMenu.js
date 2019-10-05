@@ -11,13 +11,17 @@ import './MainMenu.css'
 
 const MainMenu = (props) => {
 
-  const { menuItems } = props;
+  const { activeLink, menuItems } = props;
 
   return (
     <nav className="main-menu">
       <ul>
-        { menuItems.map((menuItem) => (
-                  <li><Link to={menuItem.link}>{ menuItem.linkTitle }</Link></li>
+        { menuItems.map((menuItem, index) => (
+                  <li key={index}>
+                    <Link className={(menuItem.link === activeLink)?"active":""}
+                          to={menuItem.link}>{menuItem.linkTitle}
+                    </Link>
+                  </li>
                 )
               ) }
       </ul>
@@ -26,6 +30,7 @@ const MainMenu = (props) => {
 }
 
 MainMenu.propTypes = {
+  activeLink: PropTypes.string.isRequired,
   menuItems: PropTypes.array.isRequired
 }
 
