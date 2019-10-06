@@ -14,6 +14,8 @@ library.add(fab)
 
 class App extends Component {
   state = {
+    mainHeaders: {
+      mainPage: {part1: "alenaTimofeeva.", part2: "About;" }},
     socialMenuItems: [
       {SM: 'GitHub', link: 'https://github.com/mouseProgrammouse', iconClass: "fab" , icon: "github-alt", className : ""},
       {SM: 'LinkedIn', link: 'https://www.linkedin.com/in/alena-timofeeva/', iconClass: "fab" , icon: "linkedin", className : "selected"},
@@ -30,10 +32,14 @@ class App extends Component {
         <Route exact path = '/' render = { () => (
           <div className = "main-page">
           <SocialAsideMenu socialMenuItems = {this.state.socialMenuItems}/>
-          <AsideHeader header = "alenaTimofeeva.About;" />
+          <AsideHeader header = {this.state.mainHeaders.mainPage} />
           <Img imgSrc={mainImg} alt="some alt text"/>
           <MainMenu activeLink = {this.props.location.pathname} menuItems = { this.state.topMenuItems }/>
-          Main page
+          <div className="about">
+          I am a Front-End Developer from Bay Area, California. I create responsive web apps with cutting edge HTML & CSS features, modern JavaScript, and beautiful design.
+          I am proficient in Photoshop & Illustrator.
+          </div>
+          <span className="decoration">;</span>
           </div>
         )} />
         <Route exact path = '/get-in-touch' render = { () => (

@@ -6,12 +6,14 @@ const AsideHeader = (props) => {
   const { header } = props;
 
   return (
-    <h1>{header}</h1>
+    <div className="main-header">
+      <h1><span className="smaller">{header.part1}</span>{header.part2}</h1>
+    </div>
   );
 }
 
 AsideHeader.propTypes = {
-  header: PropTypes.string.isRequired
+  header: PropTypes.object.isRequired
 }
 
 export default AsideHeader
