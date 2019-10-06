@@ -15,28 +15,28 @@ class App extends Component {
     return (
       <div className = "app">
         <Route exact path = '/' render = { () => (
-          <main className = "main-page">
+          <div className = "main-page">
           <MainMenu activeLink = {this.props.location.pathname} menuItems = { this.state.menuItems }/>
           Main page
-          </main>
+          </div>
         )} />
         <Route exact path = '/get-in-touch' render = { () => (
-          <main className = "get-in-touch">
+          <div className = "get-in-touch">
           <MainMenu activeLink = {this.props.location.pathname} menuItems = { this.state.menuItems }/>
           Email me to '''mouse.programmouse@gmail.com'''
-          </main>
+          </div>
         )} />
         <Route exact path = '/resume' render = { () => (
-          <main className = "resume-page">
+          <div className = "resume-page">
           <MainMenu activeLink = {this.props.location.pathname} menuItems = { this.state.menuItems }/>
           Resume page
-          </main>
+          </div>
         )} />
         <Route exact path = '/portfolio' render = { () => (
-          <main className = "portfolio-page">
+          <div className = "portfolio-page">
           <MainMenu activeLink = {this.props.location.pathname} menuItems = { this.state.menuItems }/>
           My portfolio
-          </main>
+          </div>
         )} />
       </div>
     );
