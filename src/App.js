@@ -5,6 +5,8 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import MainMenu from './MainMenu'
 import SocialAsideMenu from './SocialAsideMenu'
 import AsideHeader from './AsideHeader'
+import Img from './Img'
+import mainImg from './img/main-img.png'
 import './App.css'
 
 //add all free brands' icons from FontAwesome learn more https://github.com/FortAwesome/react-fontawesome
@@ -28,8 +30,9 @@ class App extends Component {
         <Route exact path = '/' render = { () => (
           <div className = "main-page">
           <SocialAsideMenu socialMenuItems = {this.state.socialMenuItems}/>
-          <MainMenu activeLink = {this.props.location.pathname} menuItems = { this.state.topMenuItems }/>
           <AsideHeader header = "alenaTimofeeva.About;" />
+          <Img imgSrc={mainImg} alt="some alt text"/>
+          <MainMenu activeLink = {this.props.location.pathname} menuItems = { this.state.topMenuItems }/>
           Main page
           </div>
         )} />
