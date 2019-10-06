@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import { Route, withRouter} from 'react-router-dom'
 import MainMenu from './MainMenu'
+import SocialAsideMenu from './SocialAsideMenu'
 import './App.css'
 
 class App extends Component {
   state = {
+    socialMediaItems: [],
     topMenuItems: [{linkTitle: 'Home', link: '/'},
                 {linkTitle: 'email me', link: '/get-in-touch'},
                 {linkTitle: 'resume', link: '/resume'},
@@ -16,6 +18,7 @@ class App extends Component {
       <div className = "app">
         <Route exact path = '/' render = { () => (
           <div className = "main-page">
+          <SocialAsideMenu socialMediaItems = {this.state.socialMediaItems}/>
           <MainMenu activeLink = {this.props.location.pathname} menuItems = { this.state.topMenuItems }/>
           Main page
           </div>

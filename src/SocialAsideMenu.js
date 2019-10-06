@@ -10,7 +10,7 @@ menuItems is an array of objects [{SM: 'GitHub', link: 'github...', className: "
 
 const SocialAsideMenu = (props) => {
 
-  const { SocialMediaItems } = props;
+  const { socialMediaItems } = props;
 
   return (
     <aside className="social-media-menu">
@@ -22,7 +22,7 @@ const SocialAsideMenu = (props) => {
 }
 
 SocialAsideMenu.propTypes = {
-  SocialMediaItems: PropTypes.array.isRequired
+  socialMediaItems: PropTypes.array.isRequired
 }
 
 export default SocialAsideMenu
