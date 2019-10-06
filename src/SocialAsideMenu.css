@@ -1,0 +1,41 @@
+.social-media-menu {
+  display: inline-block;
+  width: 78px;
+  float: left;
+}
+.social-media-menu ul {
+    list-style: none;
+    margin: 0 0;
+}
+
+.social-media-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: normal;
+  display: flex;
+  height: 38px;
+  background-color: #3e3c42;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-menu li:first-child{
+  padding: 19px 0 0 0;
+  background-color: #3e3c42;
+}
+
+.social-media-menu li.selected a {
+  background-color: #ffbb1a;
+}
+
+.social-media-menu li.selected a {
+    color: #3e3c42;
+    font-size: 30px;
+}
+
+.social-media-menu a:hover,
+.social-media-menu li.selected a:hover{
+  background-color: #fff;
+  color: #3e3c42;
+}

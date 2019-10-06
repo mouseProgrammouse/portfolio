@@ -6,12 +6,15 @@ import MainMenu from './MainMenu'
 import SocialAsideMenu from './SocialAsideMenu'
 import './App.css'
 
-//added all free  brand icon from FontAwesome
+//add all free brands' icons from FontAwesome learn more https://github.com/FortAwesome/react-fontawesome
 library.add(fab)
 
 class App extends Component {
   state = {
-    socialMediaItems: [],
+    socialMenuItems: [
+      {SM: 'GitHub', link: 'https://github.com/mouseProgrammouse', iconClass: "fab" , icon: "github-alt", className : ""},
+      {SM: 'LinkedIn', link: 'https://www.linkedin.com/in/alena-timofeeva/', iconClass: "fab" , icon: "linkedin", className : "selected"},
+      {SM: 'LinkedIn', link: 'https://www.behance.net/programmouse', iconClass: "fab" , icon: "behance", className : ""}],
     topMenuItems: [{linkTitle: 'Home', link: '/'},
                 {linkTitle: 'email me', link: '/get-in-touch'},
                 {linkTitle: 'resume', link: '/resume'},
@@ -23,7 +26,7 @@ class App extends Component {
       <div className = "app">
         <Route exact path = '/' render = { () => (
           <div className = "main-page">
-          <SocialAsideMenu socialMediaItems = {this.state.socialMediaItems}/>
+          <SocialAsideMenu socialMenuItems = {this.state.socialMenuItems}/>
           <MainMenu activeLink = {this.props.location.pathname} menuItems = { this.state.topMenuItems }/>
           Main page
           </div>
