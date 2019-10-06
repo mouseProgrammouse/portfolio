@@ -1,8 +1,13 @@
 import React, { Component } from 'react'
 import { Route, withRouter} from 'react-router-dom'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 import MainMenu from './MainMenu'
 import SocialAsideMenu from './SocialAsideMenu'
 import './App.css'
+
+//added all free  brand icon from FontAwesome
+library.add(fab)
 
 class App extends Component {
   state = {

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PropTypes from 'prop-types'
 
 /**
@@ -16,6 +17,7 @@ const SocialAsideMenu = (props) => {
     <aside className="social-media-menu">
       <ul>
         SocialAsideMenu
+        <FontAwesomeIcon icon={['fab', 'github-alt']} />
       </ul>
     </aside>
   );
