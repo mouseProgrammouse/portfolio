@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import './AsideHeader.css'
 
 const AsideHeader = (props) => {
 

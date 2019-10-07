@@ -1,0 +1,43 @@
+body {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 145%;
+  color: #2c2b2e;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-family: 'Work Sans', Helvetica, sans-serif;
+  color: #2c2b2e;
+}
+
+.app {
+    max-width: 1028px;
+    position: relative;
+}
+
+.main-page img {
+  display: block;
+  margin-left: 140px;
+  width: 45%;
+  height: 100%;
+}
+
+.decoration {
+  font-family: 'Work Sans', Helvetica, sans-serif;
+  color: #2c2b2e;
+  font-size: 96px;
+  line-height: 113px;
+  font-weight: bold;
+  transform-origin: left bottom;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

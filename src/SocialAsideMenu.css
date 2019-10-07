@@ -1,11 +1,16 @@
 .social-media-menu {
   display: inline-block;
-  width: 78px;
+  min-width: 38px;
   float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 .social-media-menu ul {
     list-style: none;
     margin: 0 0;
+    padding-inline-start: 0;
 }
 
 .social-media-menu a {
