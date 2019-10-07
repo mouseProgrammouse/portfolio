@@ -7,6 +7,7 @@ import SocialAsideMenu from './SocialAsideMenu'
 import AsideHeader from './AsideHeader'
 import Img from './Img'
 import mainImg from './img/main-img.png'
+import About from './About'
 import './App.css'
 
 //add all free brands' icons from FontAwesome learn more https://github.com/FortAwesome/react-fontawesome
@@ -14,8 +15,13 @@ library.add(fab)
 
 class App extends Component {
   state = {
-    mainHeaders: {
-      mainPage: {part1: "alenaTimofeeva.", part2: "About;" }},
+    mainPage: {
+      header: {part1: "alenaTimofeeva.", part2: "About;" },
+      content: {header: "Hello, I’m Alena Timofeeva",
+                description: "I am a Front-End Developer from Bay Area, California. I create responsive web apps with cutting edge HTML & CSS features, modern JavaScript, and beautiful design. I am proficient in Photoshop & Illustrator. "},
+      links: [{linkTitle: 'LinkedIn', link: 'https://www.linkedin.com/in/alena-timofeeva/', className : "selected"},
+              {linkTitle: 'Portfolio', link: '/portfolio', className : ""}]
+    },
     socialMenuItems: [
       {SM: 'GitHub', link: 'https://github.com/mouseProgrammouse', iconClass: "fab" , icon: "github-alt", className : ""},
       {SM: 'LinkedIn', link: 'https://www.linkedin.com/in/alena-timofeeva/', iconClass: "fab" , icon: "linkedin", className : "selected"},
@@ -32,14 +38,11 @@ class App extends Component {
         <Route exact path = '/' render = { () => (
           <div className = "main-page">
             <SocialAsideMenu socialMenuItems = {this.state.socialMenuItems}/>
-            <AsideHeader header = {this.state.mainHeaders.mainPage} />
+            <AsideHeader header = {this.state.mainPage.header} />
             <Img imgSrc={mainImg} alt="some alt text"/>
             <div className="content">
               <MainMenu activeLink = {this.props.location.pathname} menuItems = { this.state.topMenuItems }/>
-              <p className="about">
-              I am a Front-End Developer from Bay Area, California. I create responsive web apps with cutting edge HTML & CSS features, modern JavaScript, and beautiful design.
-              I am proficient in Photoshop & Illustrator.
-              </p>
+              <About header={this.state.mainPage.content.header} description={this.state.mainPage.content.description} links={this.state.mainPage.links}/>
             </div>
             <span className="decoration">;</span>
           </div>

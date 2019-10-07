@@ -1,0 +1,40 @@
+.about {
+  width: 80%;
+  align-self: center;
+  margin-top: 60%;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 42px;
+}
+
+.about h2 {
+  margin-bottom: 0px;
+}
+
+.about .description {
+  line-height: 145%;
+  margin: 21px 5px 36px 5px;
+}
+
+.about .links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #fff;
+  padding: 11px 48px;
+  background-color: #3e3c42;
+  font-weight: bold;
+}
+
+.about a.selected {
+  background-color: #ffbb1a;
+  color: #3e3c42;
+}

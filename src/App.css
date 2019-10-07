@@ -27,7 +27,7 @@ h1, h2, h3 {
   flex: 45%;
   display: block;
   margin-left: 130px;
-  width: 42%;
+  width: 44%;
   height: 100%;
 }
 
@@ -50,7 +50,6 @@ h1, h2, h3 {
 }
 
 .content {
-  flex: 100%;
   display: flex;
   flex-flow:  column;
 }
