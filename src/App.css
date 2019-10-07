@@ -13,14 +13,21 @@ h1, h2, h3 {
 }
 
 .app {
-    max-width: 1028px;
+    max-width: 1045px;
     position: relative;
+    margin: 0 auto;
+}
+
+.main-page {
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-page img {
+  flex: 45%;
   display: block;
-  margin-left: 140px;
-  width: 45%;
+  margin-left: 130px;
+  width: 42%;
   height: 100%;
 }
 
@@ -40,4 +47,10 @@ h1, h2, h3 {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.content {
+  flex: 100%;
+  display: flex;
+  flex-flow:  column;
 }

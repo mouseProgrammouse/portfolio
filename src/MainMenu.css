@@ -22,4 +22,9 @@
 
 .main-menu ul {
   list-style-type: none;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  margin-block-start: 0;
+  display: flex;
+  justify-content: flex-end;
 }
