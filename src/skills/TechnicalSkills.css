@@ -1,0 +1,25 @@
+.technical h4 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 33px;
+  margin: 0 0 3px 0;
+}
+
+.technical h5 {
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: 0 0;
+}
+
+.technical .skill {
+  margin: 19px 0 19px 0;
+}
+
+.technical .description {
+  margin: 4px 0 0 0;
+}
+
+.technical {
+  width: 28%;
+}

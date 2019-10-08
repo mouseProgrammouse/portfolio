@@ -10,6 +10,7 @@ import Img from './Img'
 import mainImg from './img/main-img.png'
 import OwnerInfo from './OwnerInfo'
 import About from './About'
+import Skills from './Skills'
 import './App.css'
 
 //add all free brands' icons from FontAwesome learn more https://github.com/FortAwesome/react-fontawesome
@@ -28,7 +29,13 @@ class App extends Component {
       mainInfo: {name: 'Alena Timofeeva', occupation: 'front-end developer'},
       smInfo: [{description: 'alyona.tymofieieva@gmail.com', link: '', iconClass: 'fas', icon: 'envelope-open', className : ""},
               {description: 'https://www.linkedin.com/in/alena-timofeeva/', link: 'https://www.linkedin.com/in/alena-timofeeva/', iconClass: 'fab', icon: 'linkedin', className : "active"},
-              {description: 'Santa Clara, California', link: '', iconClass: 'fas', icon: 'map-marker', className : ""},]
+              {description: 'Santa Clara, California', link: '', iconClass: 'fas', icon: 'map-marker', className : ""},],
+      skills: {
+        technical: [{cat:'Front-End', description: 'HTML5, CSS3, Bootstrap, JavaScript, ECMAScript 6, jQuery, React'},
+        {cat:'tools', description: 'Adobe Photoshop, Adobe Illustrator, Chrome DevTools, Figma'},
+        {cat:'other', description: 'Command line & Git, SQL (ANSI-92), Atlassian Jira, TFS'},
+        {cat:'Concepts', description: 'Restful API, MVC, SEO, UX, Responsive Web Design, Debugging, Testing, DOM, Agile & Scrum'}]
+      }
     },
     socialMenuItems: [
       {SM: 'GitHub', link: 'https://github.com/mouseProgrammouse', iconClass: "fab" , icon: "github-alt", className : ""},
@@ -67,6 +74,7 @@ class App extends Component {
             <AsideHeader header = {this.state.mainPage.header} />
             <MainMenu activeLink = {this.props.location.pathname} menuItems = { this.state.topMenuItems }/>
             <OwnerInfo mainInfo = {this.state.resumePage.mainInfo} smInfo = {this.state.resumePage.smInfo}/>
+            <Skills skills={this.state.resumePage.skills}/>
             <span className="decoration">;</span>
           </div>
         )} />
