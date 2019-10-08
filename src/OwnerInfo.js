@@ -10,7 +10,7 @@ const OwnerInfo = (props) => {
   return (
     <div className="owner-info">
       <MainInfo name={mainInfo.name} occupation={mainInfo.occupation}/>
-      <SocialInfo />
+      <SocialInfo smInfoItems= {smInfo}/>
     </div>
   );
 }

@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PropTypes from 'prop-types'
 import './SocialAsideMenu.css'
+
 /**
 Social media aside menu
 
 menuItems is an array of objects [{SM: 'GitHub', link: 'github...', iconClass: "fab" , icon: "github-alt", className: "selected"},...]
 */
-
 const SocialAsideMenu = (props) => {
 
   const { socialMenuItems } = props;

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Route, withRouter} from 'react-router-dom'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
 import MainMenu from './MainMenu'
 import SocialAsideMenu from './SocialAsideMenu'
 import AsideHeader from './AsideHeader'
@@ -12,7 +13,7 @@ import About from './About'
 import './App.css'
 
 //add all free brands' icons from FontAwesome learn more https://github.com/FortAwesome/react-fontawesome
-library.add(fab)
+library.add(fab, fas)
 
 class App extends Component {
   state = {
@@ -25,9 +26,9 @@ class App extends Component {
     },
     resumePage: {
       mainInfo: {name: 'Alena Timofeeva', occupation: 'front-end developer'},
-      smInfo: [{SM: '', link: '', iconClass: '', icon: ''},
-              {SM: '', link: '', iconClass: '', icon: ''},
-              {SM: '', link: '', iconClass: '', icon: ''},]
+      smInfo: [{description: 'alyona.tymofieieva@gmail.com', link: '', iconClass: 'fas', icon: 'envelope-open', className : ""},
+              {description: 'https://www.linkedin.com/in/alena-timofeeva/', link: 'https://www.linkedin.com/in/alena-timofeeva/', iconClass: 'fab', icon: 'linkedin', className : "active"},
+              {description: 'Santa Clara, California', link: '', iconClass: 'fas', icon: 'map-marker', className : ""},]
     },
     socialMenuItems: [
       {SM: 'GitHub', link: 'https://github.com/mouseProgrammouse', iconClass: "fab" , icon: "github-alt", className : ""},
