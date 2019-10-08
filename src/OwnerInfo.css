@@ -1,7 +1,7 @@
 .owner-info {
   display: flex;
   flex-flow: row;
-  margin: 10px 94px 43px 155px;
+  margin: 10px 94px 0 155px;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 15px;

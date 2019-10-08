@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import TechnicalSkills from './skills/TechnicalSkills'
+import './Skills.css'
 
 const Skills = (props) => {
 
@@ -8,7 +9,12 @@ const Skills = (props) => {
 
   return (
     <div className="skills">
-      <TechnicalSkills skills={skills.technical}/>
+      <div className="left-section">
+        <TechnicalSkills skills={skills.technical}/>
+      </div>
+      <div className="right-section">
+        OtherSkills
+      </div>
     </div>
   );
 }
