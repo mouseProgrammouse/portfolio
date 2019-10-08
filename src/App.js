@@ -23,6 +23,12 @@ class App extends Component {
       links: [{linkTitle: 'LinkedIn', link: 'https://www.linkedin.com/in/alena-timofeeva/', className : "selected"},
               {linkTitle: 'Portfolio', link: '/portfolio', className : ""}]
     },
+    resumePage: {
+      mainInfo: {name: 'Alena Timofeeva', occupation: 'front-end developer'},
+      smInfo: [{SM: '', link: '', iconClass: '', icon: ''},
+              {SM: '', link: '', iconClass: '', icon: ''},
+              {SM: '', link: '', iconClass: '', icon: ''},]
+    },
     socialMenuItems: [
       {SM: 'GitHub', link: 'https://github.com/mouseProgrammouse', iconClass: "fab" , icon: "github-alt", className : ""},
       {SM: 'LinkedIn', link: 'https://www.linkedin.com/in/alena-timofeeva/', iconClass: "fab" , icon: "linkedin", className : "selected"},
@@ -59,7 +65,7 @@ class App extends Component {
             <SocialAsideMenu socialMenuItems = {this.state.socialMenuItems}/>
             <AsideHeader header = {this.state.mainPage.header} />
             <MainMenu activeLink = {this.props.location.pathname} menuItems = { this.state.topMenuItems }/>
-            <OwnerInfo />
+            <OwnerInfo mainInfo = {this.state.resumePage.mainInfo} smInfo = {this.state.resumePage.smInfo}/>
             <span className="decoration">;</span>
           </div>
         )} />
