@@ -1,6 +1,6 @@
 import React from 'react'
-import MainInfo from './OwnerInfo/MainInfo'
-import SocialInfo from './OwnerInfo/SocialInfo'
+import MainInfo from './info/MainInfo'
+import SocialInfo from './info/SocialInfo'
 import PropTypes from 'prop-types'
 import './OwnerInfo.css'
 

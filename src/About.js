@@ -11,8 +11,8 @@ const About = (props) => {
       <h2>{header}</h2>
       <p className="description">{description}</p>
       <div className = "links"> {
-        links.map((link) => (
-          <Link className={link.className} to={link.link}>{link.linkTitle}</Link>
+        links.map((link, index) => (
+          <Link key={index} className={link.className} to={link.link}>{link.linkTitle}</Link>
         ))
       }
       </div>
