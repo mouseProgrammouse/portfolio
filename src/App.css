@@ -23,6 +23,11 @@ h1, h2, h3 {
   justify-content: space-between;
 }
 
+.resume-page {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-page img {
   flex: 45%;
   display: block;

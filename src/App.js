@@ -7,6 +7,7 @@ import SocialAsideMenu from './SocialAsideMenu'
 import AsideHeader from './AsideHeader'
 import Img from './Img'
 import mainImg from './img/main-img.png'
+import OwnerInfo from './OwnerInfo'
 import About from './About'
 import './App.css'
 
@@ -55,8 +56,11 @@ class App extends Component {
         )} />
         <Route exact path = '/resume' render = { () => (
           <div className = "resume-page">
-          <MainMenu activeLink = {this.props.location.pathname} menuItems = { this.state.topMenuItems }/>
-          Resume page
+            <SocialAsideMenu socialMenuItems = {this.state.socialMenuItems}/>
+            <AsideHeader header = {this.state.mainPage.header} />
+            <MainMenu activeLink = {this.props.location.pathname} menuItems = { this.state.topMenuItems }/>
+            <OwnerInfo />
+            <span className="decoration">;</span>
           </div>
         )} />
         <Route exact path = '/portfolio' render = { () => (
