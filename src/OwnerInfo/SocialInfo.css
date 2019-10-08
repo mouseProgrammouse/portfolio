@@ -1,8 +1,25 @@
 .social-info li {
   list-style: none;
-  text-align: right;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.social-info li svg {
-  
+.social-info .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  font-size: 24px;
+  background-color: #3e3c42;
+  color: #fff;
+  margin: 0 0 7px 5px;
+}
+
+.social-info li.active .icon {
+  font-size: 24px;
+  background-color: #ffbb1a;
+  color: #3e3c42;
 }

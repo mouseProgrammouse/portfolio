@@ -1,0 +1,16 @@
+.main-info h2 {
+  font-size: 46px;
+  line-height: 110%;
+  margin: 0 10px 11px 0;
+}
+
+.main-info {
+  max-width: 35%;
+}
+
+.main-info .occupation {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 10px 0px 0;
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import MainInfo from './OwnerInfo/MainInfo'
 import SocialInfo from './OwnerInfo/SocialInfo'
 import PropTypes from 'prop-types'
+import './OwnerInfo.css'
 
 const OwnerInfo = (props) => {
 
