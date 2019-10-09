@@ -9,7 +9,7 @@ import AsideHeader from './AsideHeader'
 import Img from './Img'
 import mainImg from './img/main-img.png'
 import OwnerInfo from './OwnerInfo'
-import About from './About'
+import MainDescription from './MainDescription'
 import Skills from './Skills'
 import './App.css'
 
@@ -35,7 +35,14 @@ class App extends Component {
                     {cat:'tools', description: 'Adobe Photoshop, Adobe Illustrator, Chrome DevTools, Figma'},
                     {cat:'other', description: 'Command line & Git, SQL (ANSI-92), Atlassian Jira, TFS'},
                     {cat:'Concepts', description: 'Restful API, MVC, SEO, UX, Responsive Web Design, Debugging, Testing, DOM, Agile & Scrum'}],
-        about: {header: 'About', description: 'I am a Front-End Developer from Bay Area, California. I create responsive web apps with cutting edge HTML & CSS features, modern JavaScript, and beautiful design. I am proficient in Photoshop & Illustrator. In my free time, I like to make ceramics and take stunning landscape photos.'}
+        about: {header: 'About', description: 'I am a Front-End Developer from Bay Area, California. I create responsive web apps with cutting edge HTML & CSS features, modern JavaScript, and beautiful design. I am proficient in Photoshop & Illustrator. In my free time, I like to make ceramics and take stunning landscape photos.'},
+        certifications: [{title: 'Front-End Web Developer Nanodegree Program', platform: 'udacity', link: '#', dates: 'Issued Jun 2018 – No Expiration Date'},
+                        {title: 'web design Intensive course', platform: 'wdi.design', link: '#', dates: 'Issued nov 2018 – No Expiration Date'},
+                        {title: 'CSS: Animation', platform: 'LinkedIn Learning (Lynda)', link: '#', dates: 'Issued Apr 2019 – No Expiration Date'},
+                        {title: 'CSS: transforms and transitions', platform: 'LinkedIn Learning (Lynda)', link: '#', dates: 'Issued Apr 2019 – No Expiration Date'},
+                        {title: 'introduction to search engine optimization', platform: 'coursera', link: '#', dates: 'Issued dec 2019 – No Expiration Date'},
+                        {title: 'Search engine optimization fundamentals', platform: 'coursera', link: '#', dates: 'Issued jan 2019 – No Expiration Date'},
+                        {title: 'CS50: CS50’s introduction to computer science', platform: 'edX', link: '#', dates: 'Issued feb 2018 – No Expiration Date'}]
       }
     },
     socialMenuItems: [
@@ -58,7 +65,7 @@ class App extends Component {
             <Img imgSrc={mainImg} alt="some alt text"/>
             <div className="content">
               <MainMenu activeLink = {this.props.location.pathname} menuItems = { this.state.topMenuItems }/>
-              <About header={this.state.mainPage.content.header} description={this.state.mainPage.content.description} links={this.state.mainPage.links}/>
+              <MainDescription header={this.state.mainPage.content.header} description={this.state.mainPage.content.description} links={this.state.mainPage.links}/>
             </div>
             <span className="decoration">;</span>
           </div>

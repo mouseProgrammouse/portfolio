@@ -1,4 +1,4 @@
-.about {
+.main-description {
   width: 80%;
   align-self: center;
   margin-top: 60%;
@@ -10,21 +10,21 @@ h2 {
   line-height: 42px;
 }
 
-.about h2 {
+.main-description h2 {
   margin-bottom: 0px;
 }
 
-.about .description {
+.main-description .description {
   line-height: 145%;
   margin: 21px 5px 36px 5px;
 }
 
-.about .links {
+.main-description .links {
   display: flex;
   justify-content: space-between;
 }
 
-.about a {
+.main-description a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
@@ -34,7 +34,7 @@ h2 {
   font-weight: bold;
 }
 
-.about a.selected {
+.main-description a.selected {
   background-color: #ffbb1a;
   color: #3e3c42;
 }

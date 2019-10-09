@@ -7,7 +7,6 @@ Technical skills description
 
 skills is an array of objects [{cat:'tools', description: 'Adobe Photoshop, Adobe Illustrator, Chrome DevTools, Figma'},]
 */
-
 const TechnicalSkills = (props) => {
 
   const { skills } = props;

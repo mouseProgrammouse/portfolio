@@ -7,7 +7,7 @@ const About = (prop) => {
   const { header, description } = prop;
 
   return (
-    <div className="about-resume">
+    <div className="about">
       <h4>{header}</h4>
       <p className="description">{description}</p>
     </div>

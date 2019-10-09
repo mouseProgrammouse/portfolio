@@ -1,0 +1,23 @@
+.certifications h4{
+  margin: 26px 0 19px 0;
+}
+
+.certifications h5 {
+  margin: 19px 0 1px 0;
+}
+
+.certifications a {
+  text-decoration: none;
+  color: #3e3c42;
+}
+
+.certifications .platform {
+  display: block;
+  text-transform: capitalize;
+  color: #2c2b2e61;
+}
+
+.certifications .dates {
+  display: block;
+  text-transform: capitalize;
+}
