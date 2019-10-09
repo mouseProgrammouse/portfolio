@@ -56,7 +56,8 @@ class App extends Component {
         links: [{description:'mouseProgrammouse', link: 'https://github.com/mouseProgrammouse', iconClass: 'fab', icon: 'github-alt', className: ''},
                 {description:'alena.dev', link: 'alena.dev', iconClass: 'fas', icon: 'link', className: ''},
                 {description:'Alena Timofeeva', link: 'https://www.linkedin.com/in/alena-timofeeva/', iconClass: 'fab', icon: 'linkedin', className: 'active'},
-                {description:'programmouse', link: 'https://www.behance.net/programmouse', iconClass: 'fab', icon: 'behance', className: ''},]
+                {description:'programmouse', link: 'https://www.behance.net/programmouse', iconClass: 'fab', icon: 'behance', className: ''},],
+        extra: {description: 'drawing, lettering, ceramic, photography'}
       }
     },
     socialMenuItems: [
