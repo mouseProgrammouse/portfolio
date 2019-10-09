@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import TechnicalSkills from './skills/TechnicalSkills'
+import SkillsListWitDescription from './skills/SkillsListWitDescription'
 import About from './skills/About'
-import Certifications from './skills/Certifications'
+import SkillsWithCertification from './skills/SkillsWithCertification'
+import SkillsListWithLevel from './skills/SkillsListWithLevel'
 import './Skills.css'
 
 const Skills = (props) => {
@@ -12,11 +13,13 @@ const Skills = (props) => {
   return (
     <div className="skills">
       <div className="left-section">
-        <TechnicalSkills skills={skills.technical} />
+        <SkillsListWitDescription title={'Technical skills'} skills={skills.technical} />
+        <SkillsListWithLevel title={'Language'} skills={skills.languages}/>
+        <SkillsListWithLevel title={'Soft skills'} skills={skills.softSkills}/>
       </div>
       <div className="right-section">
         <About header={skills.about.header} description={skills.about.description} />
-        <Certifications certifications={skills.certifications} />
+        <SkillsWithCertification title={'Licenses & Certifications'} skills={skills.certifications} />
       </div>
     </div>
   );

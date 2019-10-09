@@ -1,23 +1,23 @@
-.certifications h4{
+.skills-with-certifications h4{
   margin: 26px 0 19px 0;
 }
 
-.certifications h5 {
+.skills-with-certifications h5 {
   margin: 19px 0 1px 0;
 }
 
-.certifications a {
+.skills-with-certifications a {
   text-decoration: none;
   color: #3e3c42;
 }
 
-.certifications .platform {
+.skills-with-certifications .platform {
   display: block;
   text-transform: capitalize;
   color: #2c2b2e61;
 }
 
-.certifications .dates {
+.skills-with-certifications .dates {
   display: block;
   text-transform: capitalize;
 }

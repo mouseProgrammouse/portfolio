@@ -42,7 +42,13 @@ class App extends Component {
                         {title: 'CSS: transforms and transitions', platform: 'LinkedIn Learning (Lynda)', link: '#', dates: 'Issued Apr 2019 – No Expiration Date'},
                         {title: 'introduction to search engine optimization', platform: 'coursera', link: '#', dates: 'Issued dec 2019 – No Expiration Date'},
                         {title: 'Search engine optimization fundamentals', platform: 'coursera', link: '#', dates: 'Issued jan 2019 – No Expiration Date'},
-                        {title: 'CS50: CS50’s introduction to computer science', platform: 'edX', link: '#', dates: 'Issued feb 2018 – No Expiration Date'}]
+                        {title: 'CS50: CS50’s introduction to computer science', platform: 'edX', link: '#', dates: 'Issued feb 2018 – No Expiration Date'}],
+        languages:  [{title: 'Russian', level: 'native'},
+                    {title: 'English', level: 'Upper intermediate'},
+                    {title: 'Ukrainian', level: 'Basic'}],
+        softSkills:  [{title: 'Atention to details.', level: ''},
+                      {title: 'Web application testing experience.', level: ''},
+                      {title: 'Creativity.', level: ''}]
       }
     },
     socialMenuItems: [
