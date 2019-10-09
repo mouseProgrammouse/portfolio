@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './SkillsListWithLevel.css'
+import './SkillsWithLevel.css'
 
 /**
 List of languages
 
 languages is an array of objects [{lang: 'Russian', level: 'native'},]
 */
-const SkillsListWithLevel = ( props ) => {
+const SkillsWithLevel = ( props ) => {
 
   const { title, skills } = props;
 
@@ -23,9 +23,9 @@ const SkillsListWithLevel = ( props ) => {
     </div>);
 }
 
-SkillsListWithLevel.propTypes = {
+SkillsWithLevel.propTypes = {
   title: PropTypes.string.isRequired,
   skills: PropTypes.array.isRequired
 }
 
-export default SkillsListWithLevel
+export default SkillsWithLevel

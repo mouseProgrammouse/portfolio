@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import SkillsListWithDescription from './skills/SkillsListWithDescription'
+import SkillsWithDescription from './skills/SkillsWithDescription'
 import About from './skills/About'
-import SkillsListWithCertification from './skills/SkillsListWithCertification'
-import SkillsListWithLevel from './skills/SkillsListWithLevel'
+import SkillsWithCertification from './skills/SkillsWithCertification'
+import SkillsWithLevel from './skills/SkillsWithLevel'
 import './Skills.css'
 
 const Skills = (props) => {
@@ -13,13 +13,13 @@ const Skills = (props) => {
   return (
     <div className="skills">
       <div className="left-section">
-        <SkillsListWithDescription title={'Technical skills'} skills={skills.technical} />
-        <SkillsListWithLevel title={'Language'} skills={skills.languages}/>
-        <SkillsListWithLevel title={'Soft skills'} skills={skills.softSkills}/>
+        <SkillsWithDescription title={'Technical skills'} skills={skills.technical} />
+        <SkillsWithLevel title={'Language'} skills={skills.languages}/>
+        <SkillsWithLevel title={'Soft skills'} skills={skills.softSkills}/>
       </div>
       <div className="right-section">
         <About header={skills.about.header} description={skills.about.description} />
-        <SkillsListWithCertification title={'Licenses & Certifications'} skills={skills.certifications} />
+        <SkillsWithCertification title={'Licenses & Certifications'} skills={skills.certifications} />
       </div>
     </div>
   );

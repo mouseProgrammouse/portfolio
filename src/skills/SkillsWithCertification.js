@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-import './SkillsListWithCertification.css'
+import './SkillsWithCertification.css'
 
 /**
 List of certifications & Licenses
 
 certifications is an array of objects [{title: 'Front-End Web Developer Nanodegree Program', platform: 'udacity', link: '', dates: 'Issued Jun 2018 – No Expiration Date'},]
 */
-const SkillsListWithCertification = (props) => {
+const SkillsWithCertification = (props) => {
 
   const { title, skills } = props;
 
@@ -25,9 +25,9 @@ const SkillsListWithCertification = (props) => {
   );
 }
 
-SkillsListWithCertification.propTypes = {
+SkillsWithCertification.propTypes = {
   title: PropTypes.string.isRequired,
   skills: PropTypes.array.isRequired
 }
 
-export default SkillsListWithCertification
+export default SkillsWithCertification
