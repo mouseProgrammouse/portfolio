@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import TechnicalSkills from './skills/TechnicalSkills'
+import About from './skills/About'
 import './Skills.css'
 
 const Skills = (props) => {
@@ -13,7 +14,7 @@ const Skills = (props) => {
         <TechnicalSkills skills={skills.technical}/>
       </div>
       <div className="right-section">
-        OtherSkills
+        <About header={skills.about.header} description={skills.about.description} />
       </div>
     </div>
   );

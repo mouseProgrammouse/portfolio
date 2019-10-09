@@ -32,9 +32,10 @@ class App extends Component {
               {description: 'Santa Clara, California', link: '', iconClass: 'fas', icon: 'map-marker', className : ""},],
       skills: {
         technical: [{cat:'Front-End', description: 'HTML5, CSS3, Bootstrap, JavaScript, ECMAScript 6, jQuery, React'},
-        {cat:'tools', description: 'Adobe Photoshop, Adobe Illustrator, Chrome DevTools, Figma'},
-        {cat:'other', description: 'Command line & Git, SQL (ANSI-92), Atlassian Jira, TFS'},
-        {cat:'Concepts', description: 'Restful API, MVC, SEO, UX, Responsive Web Design, Debugging, Testing, DOM, Agile & Scrum'}]
+                    {cat:'tools', description: 'Adobe Photoshop, Adobe Illustrator, Chrome DevTools, Figma'},
+                    {cat:'other', description: 'Command line & Git, SQL (ANSI-92), Atlassian Jira, TFS'},
+                    {cat:'Concepts', description: 'Restful API, MVC, SEO, UX, Responsive Web Design, Debugging, Testing, DOM, Agile & Scrum'}],
+        about: {header: 'About', description: 'I am a Front-End Developer from Bay Area, California. I create responsive web apps with cutting edge HTML & CSS features, modern JavaScript, and beautiful design. I am proficient in Photoshop & Illustrator. In my free time, I like to make ceramics and take stunning landscape photos.'}
       }
     },
     socialMenuItems: [
