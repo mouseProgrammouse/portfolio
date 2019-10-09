@@ -1,3 +1,16 @@
 .skills-with-level h4 {
   margin-bottom: 3px;
 }
+
+.skills-with-level ul {
+  padding-inline-start: 17px;
+  margin-top: 10px;
+}
+
+.skills-with-level li {
+  margin: 3px 0 0 0; 
+}
+
+.skills-with-level  .level {
+  color: #2c2b2e61;
+}

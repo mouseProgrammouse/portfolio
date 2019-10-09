@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './SkillsListWitDescription.css'
+import './SkillsListWithDescription.css'
 
 /**
 Technical skills description
 
 skills is an array of objects [{cat:'tools', description: 'Adobe Photoshop, Adobe Illustrator, Chrome DevTools, Figma'},]
 */
-const SkillsListWitDescription = (props) => {
+const SkillsListWithDescription = (props) => {
 
   const { title, skills } = props;
 
@@ -23,9 +23,9 @@ const SkillsListWitDescription = (props) => {
   );
 }
 
-SkillsListWitDescription.propTypes = {
+SkillsListWithDescription.propTypes = {
   title: PropTypes.string.isRequired,
   skills: PropTypes.array.isRequired
 }
 
-export default SkillsListWitDescription
+export default SkillsListWithDescription

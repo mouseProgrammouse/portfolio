@@ -17,7 +17,7 @@ const SkillsListWithLevel = ( props ) => {
       <ul>
         {skills.map((skill ,index)=>(
           <li key={index}>{skill.title}
-          {(skill.level)?(<span className="level">({skill.level})</span>):''}
+          {(skill.level)?(<span className="level"> ({skill.level})</span>):''}
           </li>))}
       </ul>
     </div>);
