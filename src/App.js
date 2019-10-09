@@ -19,11 +19,11 @@ library.add(fab, fas)
 class App extends Component {
   state = {
     mainPage: {
-      header: {part1: "alenaTimofeeva.", part2: "About;" },
-      content: {header: "Hello, I’m Alena Timofeeva",
-                description: "I am a Front-End Developer from Bay Area, California. I create responsive web apps with cutting edge HTML & CSS features, modern JavaScript, and beautiful design. I am proficient in Photoshop & Illustrator. "},
-      links: [{linkTitle: 'LinkedIn', link: 'https://www.linkedin.com/in/alena-timofeeva/', className : "selected"},
-              {linkTitle: 'Portfolio', link: '/portfolio', className : ""}]
+      header: {part1: 'alenaTimofeeva.', part2: 'About;'},
+      content: {header: 'Hello, I’m Alena Timofeeva',
+                description: 'I am a Front-End Developer from Bay Area, California. I create responsive web apps with cutting edge HTML & CSS features, modern JavaScript, and beautiful design. I am proficient in Photoshop & Illustrator.'},
+      links: [{linkTitle: 'LinkedIn', link: 'https://www.linkedin.com/in/alena-timofeeva/', className : 'selected'},
+              {linkTitle: 'Portfolio', link: '/portfolio', className : ''}]
     },
     resumePage: {
       mainInfo: {name: 'Alena Timofeeva', occupation: 'front-end developer'},
@@ -52,13 +52,17 @@ class App extends Component {
         education: [{title: 'itmo university', date: '', description: 'Bachelor’s degree, Computer Science (2008 – 2013)'}],
         experience: [{title: 'Freelance \\ front-end developer', date: 'November 2017 – March 2018', description: ''},
                     {title: 'Firstline software \\ test engineer', date: 'December 2013 – October 2015', description: 'I was testing various web-based apps. A part of my duties was to create automated tools for testing and environment preparations.'},
-                  {title: 'korus consulting \\ junior test engineer', date: 'August 2013 – december 2015', description: 'I was testing web-based medical records system with SQL and Document-oriented databases as storages.'}]
+                  {title: 'korus consulting \\ junior test engineer', date: 'August 2013 – december 2015', description: 'I was testing web-based medical records system with SQL and Document-oriented databases as storages.'}],
+        links: [{description:'mouseProgrammouse', link: 'https://github.com/mouseProgrammouse', iconClass: 'fab', icon: 'github-alt', className: ''},
+                {description:'alena.dev', link: 'alena.dev', iconClass: 'fas', icon: 'link', className: ''},
+                {description:'Alena Timofeeva', link: 'https://www.linkedin.com/in/alena-timofeeva/', iconClass: 'fab', icon: 'linkedin', className: 'active'},
+                {description:'programmouse', link: 'https://www.behance.net/programmouse', iconClass: 'fab', icon: 'behance', className: ''},]
       }
     },
     socialMenuItems: [
-      {SM: 'GitHub', link: 'https://github.com/mouseProgrammouse', iconClass: "fab" , icon: "github-alt", className : ""},
-      {SM: 'LinkedIn', link: 'https://www.linkedin.com/in/alena-timofeeva/', iconClass: "fab" , icon: "linkedin", className : "selected"},
-      {SM: 'LinkedIn', link: 'https://www.behance.net/programmouse', iconClass: "fab" , icon: "behance", className : ""}],
+      {SM: 'GitHub', link: 'https://github.com/mouseProgrammouse', iconClass: 'fab' , icon: 'github-alt', className : ''},
+      {SM: 'LinkedIn', link: 'https://www.linkedin.com/in/alena-timofeeva/', iconClass: 'fab' , icon: 'linkedin', className : 'selected'},
+      {SM: 'LinkedIn', link: 'https://www.behance.net/programmouse', iconClass: 'fab' , icon: 'behance', className : ''}],
     topMenuItems: [{linkTitle: 'Home', link: '/'},
                 {linkTitle: 'email me', link: '/get-in-touch'},
                 {linkTitle: 'resume', link: '/resume'},

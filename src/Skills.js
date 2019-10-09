@@ -5,6 +5,7 @@ import About from './skills/About'
 import SkillsWithCertification from './skills/SkillsWithCertification'
 import SkillsWithLevel from './skills/SkillsWithLevel'
 import SkillsWithDateAndDescription from './skills/SkillsWithDateAndDescription'
+import SMLinks from './skills/SMLinks'
 import './Skills.css'
 
 const Skills = (props) => {
@@ -17,6 +18,7 @@ const Skills = (props) => {
         <SkillsWithDescription title={'Technical skills'} skills={skills.technical} />
         <SkillsWithLevel title={'Language'} skills={skills.languages}/>
         <SkillsWithLevel title={'Soft skills'} skills={skills.softSkills}/>
+        <SMLinks title={'Links'} links={skills.links} />
       </div>
       <div className="right-section">
         <About header={skills.about.header} description={skills.about.description} />

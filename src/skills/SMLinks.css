@@ -1,0 +1,41 @@
+.links h4 {
+    margin-bottom: 3px;
+}
+
+.links ul {
+  list-style: none;
+  padding-inline-start: 0;
+  margin: 10px 0;
+}
+
+.links ul a {
+  text-decoration: none;
+  color: #2c2b2e;
+}
+
+.links .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  font-size: 24px;
+  background-color: #3e3c42;
+  color: #fff;
+  margin: 4px 0;
+}
+
+.links li.active .icon {
+  font-size: 30px;
+  background-color: #ffbb1a;
+  color: #3e3c42;
+}
+
+.links .link {
+  display: flex;
+  align-items: center;
+}
+
+.links .description {
+  margin: 0 5px;
+}
