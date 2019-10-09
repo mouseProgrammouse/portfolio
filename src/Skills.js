@@ -4,6 +4,7 @@ import SkillsWithDescription from './skills/SkillsWithDescription'
 import About from './skills/About'
 import SkillsWithCertification from './skills/SkillsWithCertification'
 import SkillsWithLevel from './skills/SkillsWithLevel'
+import SkillsWithDateAndDescription from './skills/SkillsWithDateAndDescription'
 import './Skills.css'
 
 const Skills = (props) => {
@@ -20,6 +21,8 @@ const Skills = (props) => {
       <div className="right-section">
         <About header={skills.about.header} description={skills.about.description} />
         <SkillsWithCertification title={'Licenses & Certifications'} skills={skills.certifications} />
+        <SkillsWithDateAndDescription title={'Education'} skills={skills.education}/>
+        <SkillsWithDateAndDescription title={'Experience'} skills={skills.experience}/>
       </div>
     </div>
   );

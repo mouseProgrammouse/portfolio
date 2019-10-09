@@ -48,7 +48,11 @@ class App extends Component {
                     {title: 'Ukrainian', level: 'Basic'}],
         softSkills:  [{title: 'Atention to details.', level: ''},
                       {title: 'Web application testing experience.', level: ''},
-                      {title: 'Creativity.', level: ''}]
+                      {title: 'Creativity.', level: ''}],
+        education: [{title: 'itmo university', date: '', description: 'Bachelor’s degree, Computer Science (2008 – 2013)'}],
+        experience: [{title: 'Freelance \\ front-end developer', date: 'November 2017 – March 2018', description: ''},
+                    {title: 'Firstline software \\ test engineer', date: 'December 2013 – October 2015', description: 'I was testing various web-based apps. A part of my duties was to create automated tools for testing and environment preparations.'},
+                  {title: 'korus consulting \\ junior test engineer', date: 'August 2013 – december 2015', description: 'I was testing web-based medical records system with SQL and Document-oriented databases as storages.'}]
       }
     },
     socialMenuItems: [
