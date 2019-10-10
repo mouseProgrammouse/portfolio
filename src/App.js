@@ -26,6 +26,7 @@ class App extends Component {
               {linkTitle: 'Portfolio', link: '/portfolio', className : ''}]
     },
     resumePage: {
+      header: {part1: 'alenaTimofeeva.', part2: 'Resume;'},
       mainInfo: {name: 'Alena Timofeeva', occupation: 'front-end developer'},
       smInfo: [{description: 'alyona.tymofieieva@gmail.com', link: '', iconClass: 'fas', icon: 'envelope-open', className : ""},
               {description: 'https://www.linkedin.com/in/alena-timofeeva/', link: 'https://www.linkedin.com/in/alena-timofeeva/', iconClass: 'fab', icon: 'linkedin', className : "active"},
@@ -94,7 +95,7 @@ class App extends Component {
         <Route exact path = '/resume' render = { () => (
           <div className = "resume-page">
             <SocialAsideMenu socialMenuItems = {this.state.socialMenuItems}/>
-            <AsideHeader header = {this.state.mainPage.header} />
+            <AsideHeader header = {this.state.resumePage.header} />
             <MainMenu activeLink = {this.props.location.pathname} menuItems = { this.state.topMenuItems }/>
             <OwnerInfo mainInfo = {this.state.resumePage.mainInfo} smInfo = {this.state.resumePage.smInfo}/>
             <Skills skills={this.state.resumePage.skills}/>

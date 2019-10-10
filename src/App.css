@@ -1,3 +1,7 @@
+/** {
+  border: 1px solid red;
+}*/
+
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
   font-weight: normal;
@@ -35,6 +39,7 @@ h5 {
 }
 
 .resume-page {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }

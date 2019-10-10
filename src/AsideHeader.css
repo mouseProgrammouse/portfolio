@@ -11,12 +11,13 @@
   left: 113px;
   padding: 0 0;
   margin: 0 0;
+  z-index: 10;
 }
 
 .main-header h1 {
   font-weight: bold;
   font-size: 96px;
-  line-height: 113px;
+  line-height: 96px;
   padding: 0 0;
   margin: 0 0;
 }
