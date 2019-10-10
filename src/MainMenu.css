@@ -8,6 +8,13 @@
   color: #3e3c42;
   text-align: center;
   padding: 11px 25px;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  -webkit-transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-property: transform;
 }
 
 .main-menu a.active {
@@ -22,4 +29,9 @@
   margin-block-start: 0;
   display: flex;
   justify-content: flex-end;
+}
+
+.main-menu a:hover, a:focus, a:active {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
 }
