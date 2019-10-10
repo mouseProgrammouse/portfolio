@@ -55,8 +55,8 @@
 }
 
 .social-media-menu svg:hover,
-.social-media-menu svg:hover,
-.social-media-menu svg:hover {
+.social-media-menu svg:active,
+.social-media-menu svg:focus {
   transform: scale(0.9);
   -webkit-transform: scale(0.9);
 }
