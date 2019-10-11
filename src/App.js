@@ -25,12 +25,15 @@ class App extends Component {
       links: [{linkTitle: 'LinkedIn', link: 'https://www.linkedin.com/in/alena-timofeeva/', className : 'selected'},
               {linkTitle: 'Portfolio', link: '/portfolio', className : ''}]
     },
+    getInTouch: {
+      header: {part1: 'alenaTimofeeva.', part2: 'GetInTouch;'},
+    },
     resumePage: {
       header: {part1: 'alenaTimofeeva.', part2: 'Resume;'},
       mainInfo: {name: 'Alena Timofeeva', occupation: 'front-end developer'},
       smInfo: [{description: 'alyona.tymofieieva@gmail.com', link: '', iconClass: 'fas', icon: 'envelope-open', className : ""},
               {description: 'https://www.linkedin.com/in/alena-timofeeva/', link: 'https://www.linkedin.com/in/alena-timofeeva/', iconClass: 'fab', icon: 'linkedin', className : "active"},
-              {description: 'Santa Clara, California', link: '', iconClass: 'fas', icon: 'map-marker', className : ""},],
+              {description: 'Bay Area, California', link: '', iconClass: 'fas', icon: 'map-marker', className : ""},],
       skills: {
         technical: [{cat:'Front-End', description: 'HTML5, CSS3, Bootstrap, JavaScript, ECMAScript 6, jQuery, React'},
                     {cat:'tools', description: 'Adobe Photoshop, Adobe Illustrator, Chrome DevTools, Figma'},
@@ -88,8 +91,11 @@ class App extends Component {
         )} />
         <Route exact path = '/get-in-touch' render = { () => (
           <div className = "get-in-touch">
-          <MainMenu activeLink = {this.props.location.pathname} menuItems = { this.state.topMenuItems }/>
-          Email me to '''mouse.programmouse@gmail.com'''
+            <SocialAsideMenu socialMenuItems = {this.state.socialMenuItems}/>
+            <AsideHeader header = {this.state.getInTouch.header} />
+            <MainMenu activeLink = {this.props.location.pathname} menuItems = { this.state.topMenuItems }/>
+            Email me to '''mouse.programmouse@gmail.com'''
+            <span className="decoration">;</span>
           </div>
         )} />
         <Route exact path = '/resume' render = { () => (
