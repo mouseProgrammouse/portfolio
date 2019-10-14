@@ -105,3 +105,9 @@
   transform: scale(0.9);
   -webkit-transform: scale(0.9);
 }
+
+.email-form .flash-message {
+    z-index: 10;
+    position: absolute;
+    top: 80px;
+}
