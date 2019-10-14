@@ -11,6 +11,7 @@ import mainImg from './img/main-img.png'
 import OwnerInfo from './OwnerInfo'
 import MainDescription from './MainDescription'
 import Skills from './Skills'
+import EmailForm from './EmailForm'
 import './App.css'
 
 //add all free brands' icons from FontAwesome learn more https://github.com/FortAwesome/react-fontawesome
@@ -94,7 +95,7 @@ class App extends Component {
             <SocialAsideMenu socialMenuItems = {this.state.socialMenuItems}/>
             <AsideHeader header = {this.state.getInTouch.header} />
             <MainMenu activeLink = {this.props.location.pathname} menuItems = { this.state.topMenuItems }/>
-            Email me to '''mouse.programmouse@gmail.com'''
+            <EmailForm />
             <span className="decoration">;</span>
           </div>
         )} />
