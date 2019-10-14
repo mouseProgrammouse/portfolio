@@ -95,10 +95,6 @@
   -webkit-transition-property: transform;
 }
 
-.email-form .form button{
-  margin-bottom: 150px;
-}
-
 .email-form .form button:hover,
 .email-form .form button:focus,
 .email-form .form button:active {
