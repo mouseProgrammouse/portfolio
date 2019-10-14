@@ -6,16 +6,21 @@ import './EmailForm.css'
 emailjs.init("user_xiQS7FFl68ZPHFw4M1UDX");
 
 class EmailForm extends Component {
+
+  state = { flashMessage: '' }
+
   handleSubmit = (event) => {
     event.preventDefault();
     const templateId = 'template_XGI2JP9e';
     const value = serializeForm(event.target, { hash: true });
+    event.target.reset();
     this.sendMessage(templateId, {from_name: value.name + ' ' +value.lastname, from_email: value.email, message: value.message});
   }
 
   render () {
     return (
       <div className='email-form'>
+        <div className="flashMessage">{this.state.flashMessage}</div>
         <h2>Get in touch</h2>
         <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
         <form onSubmit={this.handleSubmit} className='form'>
@@ -42,7 +47,9 @@ class EmailForm extends Component {
   }
 
   sendMessage (templateId, message) {
-    emailjs.send('gmail', templateId, message);
+    emailjs.send('gmail', templateId, message).then((response)=>(
+      this.setState({flashMessage:'Woohoo! Email successfully sent!'})), (error)=>(
+        this.setState({ flashMessage:'Oh well, you failed. Here some thoughts on the error that occured: '+error.text})));
   }
 }
 
