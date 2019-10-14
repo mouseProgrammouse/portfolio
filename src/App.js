@@ -27,7 +27,7 @@ class App extends Component {
               {linkTitle: 'Portfolio', link: '/portfolio', className : ''}]
     },
     getInTouch: {
-      header: {part1: 'alenaTimofeeva.', part2: 'GetInTouch;'},
+      header: {part1: 'alenaTimofeeva.', part2: 'EmailMe;'},
     },
     resumePage: {
       header: {part1: 'alenaTimofeeva.', part2: 'Resume;'},
