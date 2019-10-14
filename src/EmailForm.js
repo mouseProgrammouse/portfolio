@@ -5,9 +5,8 @@ import './EmailForm.css'
 //add EmailJS
 emailjs.init("user_xiQS7FFl68ZPHFw4M1UDX");
 
-
 class EmailForm extends Component {
-  state = { flashMessage: '' }
+  state = { flashMessage: '', className: '' }
 
   handleSubmit = (event) => {
     event.preventDefault();
@@ -20,7 +19,7 @@ class EmailForm extends Component {
   render () {
     return (
       <div className='email-form'>
-        <div className="flash-message">{this.state.flashMessage}</div>
+        <div className={this.state.className + " flash-message"}>{this.state.flashMessage}</div>
         <h2>Get in touch</h2>
         <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
         <form onSubmit={this.handleSubmit} className='form'>
@@ -48,11 +47,11 @@ class EmailForm extends Component {
 
   sendMessage (templateId, message) {
     emailjs.send('gmail', templateId, message).then((response)=> {
-      this.setState({flashMessage:'Woohoo! Email successfully sent!'});
-      setTimeout(()=> this.setState({ flashMessage: '' }), 3000);
+      this.setState({flashMessage:'Woohoo! Email successfully sent!', className:'success'});
+      setTimeout(()=> this.setState({ flashMessage: '', className:'' }), 3000);
     }, (error)=>{
-        this.setState({ flashMessage:'Oh well, you failed. Here some thoughts on the error that occured: '+error.text});
-        setTimeout(()=> this.setState({ flashMessage: '' }), 3000);
+        this.setState({ flashMessage:'Oh well, you failed. Here some thoughts on the error that occured: '+error.text, className:'error'});
+        setTimeout(()=> this.setState({ flashMessage: '', className:'' }), 3000);
       });
   }
 }
