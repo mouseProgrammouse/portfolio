@@ -28,6 +28,8 @@ class App extends Component {
     },
     getInTouch: {
       header: {part1: 'alenaTimofeeva.', part2: 'EmailMe;'},
+      title: 'Get in touch',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...'
     },
     resumePage: {
       header: {part1: 'alenaTimofeeva.', part2: 'Resume;'},
@@ -95,7 +97,7 @@ class App extends Component {
             <SocialAsideMenu socialMenuItems = {this.state.socialMenuItems}/>
             <AsideHeader header = {this.state.getInTouch.header} />
             <MainMenu activeLink = {this.props.location.pathname} menuItems = { this.state.topMenuItems }/>
-            <EmailForm />
+            <EmailForm title = {this.state.getInTouch.title} description={this.state.getInTouch.description}/>
             <span className="decoration">;</span>
           </div>
         )} />

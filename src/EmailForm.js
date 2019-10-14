@@ -1,12 +1,18 @@
 import React, {Component} from 'react';
 import emailjs from 'emailjs-com'
 import serializeForm from 'form-serialize'
+import PropTypes from 'prop-types'
 import './EmailForm.css'
+
 //add EmailJS
 emailjs.init("user_xiQS7FFl68ZPHFw4M1UDX");
 
 class EmailForm extends Component {
-  state = { flashMessage: '', className: '' }
+
+  constructor (props) {
+    super(props);
+    this.state = { flashMessage: '', className: '' }
+  }
 
   handleSubmit = (event) => {
     event.preventDefault();
@@ -20,8 +26,8 @@ class EmailForm extends Component {
     return (
       <div className='email-form'>
         <div className={this.state.className + " flash-message"}>{this.state.flashMessage}</div>
-        <h2>Get in touch</h2>
-        <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+        <h2>{ this.props.title }</h2>
+        <p className="description">{ this.props.description }</p>
         <form onSubmit={this.handleSubmit} className='form'>
           <div className='first-name'>
             <label> First name </label>
@@ -54,6 +60,11 @@ class EmailForm extends Component {
         setTimeout(()=> this.setState({ flashMessage: '', className:'' }), 3000);
       });
   }
+}
+
+EmailForm.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string
 }
 
 export default EmailForm
