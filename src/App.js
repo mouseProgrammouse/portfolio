@@ -79,6 +79,7 @@ const data = {
               {linkTitle: 'portfolio', link: '/portfolio'}]
 };
 
+
 class App extends Component {
 
   render () {

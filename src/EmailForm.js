@@ -53,10 +53,10 @@ class EmailForm extends Component {
 
   sendMessage (templateId, message) {
     emailjs.send('gmail', templateId, message).then((response)=> {
-      this.setState({flashMessage:'Woohoo! Email successfully sent!', className:'success'});
+      this.setState({flashMessage:'Woohoo! Email successfully sent! ✨', className:'success'});
       setTimeout(()=> this.setState({ flashMessage: '', className:'' }), 3000);
     }, (error)=>{
-        this.setState({ flashMessage:'Oh well, you failed. Here some thoughts on the error that occured: '+error.text, className:'error'});
+        this.setState({ flashMessage:'Oh well, you failed. Here some thoughts on the error that occured: '+error.text+' 😱', className:'error'});
         setTimeout(()=> this.setState({ flashMessage: '', className:'' }), 3000);
       });
   }

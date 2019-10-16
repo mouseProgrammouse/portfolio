@@ -36,9 +36,7 @@ h5 {
 }
 
 .resume-page {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  max-width: 1045px;
 }
 
 .main-page img {
@@ -70,9 +68,4 @@ h5 {
 .content {
   display: flex;
   flex-flow:  column;
-}
-
-.resume-page {
-  display: flex;
-  flex-flow: column;
 }
