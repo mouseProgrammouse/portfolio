@@ -32,18 +32,22 @@ class EmailForm extends Component {
           <div className='first-name'>
             <label> First name </label>
             <input type='text' name='name' required/>
+            <span className="border"></span>
           </div>
           <div className='last-name'>
             <label>Last name </label>
             <input type='text' name='lastname' required/>
+            <span className="border"></span>
           </div>
           <div className='email'>
             <label>email </label>
             <input type='email' name='email' required/>
+            <span className="border"></span>
           </div>
           <div className='message'>
             <label>message </label>
             <textarea type="text" name='message' required/>
+            <span className="border"></span>
           </div>
           <button>send</button>
         </form>

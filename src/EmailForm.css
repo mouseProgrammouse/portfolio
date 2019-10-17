@@ -18,9 +18,12 @@
 }
 
 .email-form .form label {
+  width: 100%;
+  position: relative;
   font-weight: bold;
   text-transform: uppercase;
   color: #3e3c42;
+  padding-right: 40px;
 }
 
 .email-form .form input{
@@ -31,6 +34,38 @@
   border: none;
   background-color: #e5e5e5;
   border-bottom: 2px solid #e5e5e5;
+}
+
+.email-form .form .first-name,
+.email-form .form .last-name,
+.email-form .form .email,
+.email-form .form .message
+{
+  position: relative;
+}
+
+.email-form .form .border {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 100%;
+  top: 54px;
+  border-bottom: 2px solid #3e3c42;
+  transition: all 600ms;
+  -webkit-transition: all 600ms;
+}
+
+.email-form .form .message .border {
+  top: 192px;
+}
+
+.email-form .form input:hover + .border,
+.email-form .form input:focus + .border,
+.email-form .form textarea:hover + .border,
+.email-form .form textarea:focus + .border{
+    right: 0;
+    padding: 0 20px;
+    width: 100%;
 }
 
 .email-form .form input:focus{
