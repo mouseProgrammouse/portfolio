@@ -62,10 +62,15 @@
 .email-form .form input:hover + .border,
 .email-form .form input:focus + .border,
 .email-form .form textarea:hover + .border,
-.email-form .form textarea:focus + .border{
+.email-form .form textarea:focus + .border {
     right: 0;
-    padding: 0 20px;
     width: 100%;
+    padding-right: 40px;
+}
+
+.email-form .form textarea:hover + .border,
+.email-form .form textarea:focus + .border {
+  padding-right: 44px;
 }
 
 .email-form .form input:focus{
