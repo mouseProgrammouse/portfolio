@@ -38,7 +38,7 @@ const data = {
     previewImg: projectStudioImg,
     alt: '',
     links : [
-      {className: 'button active', text: 'Life page', iconClass: '', icon: '', link: '#'},
+      {className: 'button active', text: 'Live page', iconClass: '', icon: '', link: '#'},
       {className: 'icon', text: '', iconClass: 'fab', icon: 'github-alt', link: '#'},
       {className: 'icon', text: '', iconClass: 'fab', icon: 'behance', link: '#'}
     ]
