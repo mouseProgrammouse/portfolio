@@ -8,10 +8,12 @@ import SocialAsideMenu from './SocialAsideMenu'
 import AsideHeader from './AsideHeader'
 import Img from './Img'
 import mainImg from './img/main-img.png'
+import projectStudioImg from './img/project_studio.png'
 import OwnerInfo from './OwnerInfo'
 import MainDescription from './MainDescription'
 import Skills from './Skills'
 import EmailForm from './EmailForm'
+import ProjectPreview from './ProjectPreview'
 import './App.css'
 
 //add all free brands' icons from FontAwesome learn more https://github.com/FortAwesome/react-fontawesome
@@ -32,6 +34,14 @@ const data = {
   },
   portfolioPage: {
     header: {part1: 'alenaTimofeeva.', part2: 'Portfolio;'},
+    projects: [{name: 'Website for knitting studio', description: 'I created a landing page for a tiny knitting studio in a Ukrainian city. I implemented pretty much everything: design, CSS, coding, buying a domain and even deploying (AWS). Project on GitHub and Behance.',
+    previewImg: projectStudioImg,
+    links : [
+      {className: 'button active', text: 'Life page', iconClass: '', icon: '', link: '#'},
+      {className: 'icon', text: '', iconClass: 'fab', icon: 'github-alt', link: '#'},
+      {className: 'icon', text: '', iconClass: 'fab', icon: 'behance', link: '#'}
+    ]
+  }]
   },
   resumePage: {
     header: {part1: 'alenaTimofeeva.', part2: 'Resume;'},
@@ -121,7 +131,7 @@ class App extends Component {
           <SocialAsideMenu socialMenuItems = {data.socialMenuItems}/>
           <AsideHeader header = {data.portfolioPage.header} />
           <MainMenu activeLink = {this.props.location.pathname} menuItems = { data.topMenuItems }/>
-          My portfolio
+          <ProjectPreview projects= {data.portfolioPage.projects} />
           </div>
         )} />
       </div>
