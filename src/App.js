@@ -131,8 +131,8 @@ class App extends Component {
           <div className = "portfolio-page">
           <SocialAsideMenu socialMenuItems = {data.socialMenuItems}/>
           <AsideHeader header = {data.portfolioPage.header} />
-          <MainMenu activeLink = {this.props.location.pathname} menuItems = { data.topMenuItems }/>
           <ProjectPreview projects= {data.portfolioPage.projects} />
+          <MainMenu activeLink = {this.props.location.pathname} menuItems = { data.topMenuItems }/>
           </div>
         )} />
       </div>

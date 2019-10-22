@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import'./ProjectPreview.css'
 
 /**
-projects: [{header: 'Website for knitting studio', description: 'I created a landing page for a tiny knitting studio in a Ukrainian city. I implemented pretty much everything: design, CSS, coding, buying a domain and even deploying (AWS). Project on GitHub and Behance.',
+project: [{header: 'Website for knitting studio', description: 'I created a landing page for a tiny knitting studio in a Ukrainian city. I implemented pretty much everything: design, CSS, coding, buying a domain and even deploying (AWS). Project on GitHub and Behance.',
 previewImg: projectStudioImg,
 links : [
   {className: 'button active', text: 'Life page', iconClass: '', icon: '', link: '#'},
@@ -21,17 +21,19 @@ const ProjectPreview = (props) => {
     <div className="project-previews">
       {projects.map((project, index) => (
         <div className="preview" key={index}>
+          <div className="project-img">
+            <img src={project.previewImg} alt={project.alt}/>
+          </div>
           <div className="project-description">
             <h2>{project.header}</h2>
             <p>{project.description}</p>
-            {project.links.map((link,index) => (
-              <Link key={index} className={link.className} to={link.link}>
-              {link.text || <FontAwesomeIcon icon={[link.iconClass, link.icon]} />}
-              </Link>
-            ))}
-          </div>
-          <div className="project-img">
-            <img src={project.previewImg} alt={project.alt}/>
+            <div className="links">
+              {project.links.map((link,index) => (
+                <Link key={index} className={link.className} to={link.link}>
+                {link.text || <FontAwesomeIcon icon={[link.iconClass, link.icon]} />}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       ))}

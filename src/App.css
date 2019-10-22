@@ -69,3 +69,13 @@ h5 {
   display: flex;
   flex-flow:  column;
 }
+
+.portfolio-page {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.portfolio-page .main-menu{
+  width: 60%;
+}
