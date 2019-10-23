@@ -11,10 +11,12 @@ const ProjectsSlideShow = (props) => {
   return (
     <div className="projects-slideshow-container">
       {projects.map((project, index) => (
-        <ProjectPreview project={project} index={index} amount={3} key={index}/>
+        <ProjectPreview project={project} index={index+1} amount={9} key={index}/>
       ))}
-      <a className="prev"><FontAwesomeIcon icon={'fas', 'caret-left'} /></a>
-      <a className="next"><FontAwesomeIcon icon={'fas', 'caret-right'} /></a>
+      <div className="switchers">
+        <a className="icon prev"><FontAwesomeIcon icon={'fas', 'caret-left'} /></a>
+        <a className="icon next"><FontAwesomeIcon icon={'fas', 'caret-right'} /></a>
+      </div>
     </div>
   );
 }

@@ -20,7 +20,9 @@ const ProjectPreview = (props) => {
 
   return (
         <div className="preview" key={index}>
-          <span className="index">{index+1}</span><span className="amount">{"/"+amount}</span>
+          <div className="counters">
+            <span className="index">{(index<10)?'0'+index:index}</span><span className="amount">{(amount<10)?'/0'+amount:'/'+amount}</span>
+          </div>
           <div className="project-img">
             <img src={project.previewImg} alt={project.alt}/>
           </div>

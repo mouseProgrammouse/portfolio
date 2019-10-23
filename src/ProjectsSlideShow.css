@@ -2,8 +2,59 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+    justify-content: center;
     width: 60%;
     background-color: #F0EFED;
     margin-left: 130px;
     min-height: 900px;
+}
+
+.projects-slideshow-container .counters {
+  font-family: 'Work Sans', Helvetica, sans-serif;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top: 5%;
+  transform-origin: right bottom;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.projects-slideshow-container .switchers {
+  display: flex;
+  flex-flow: row;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.projects-slideshow-container .prev {
+  margin-right: 10px;
+}
+
+.projects-slideshow-container .index {
+  font-size: 46px;
+}
+
+.projects-slideshow-container .amount {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.projects-slideshow-container .icon {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  background-color: #3e3c42;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-slideshow-container .icon svg {
+  color: #fff;
+  font-size: 28px;
 }
