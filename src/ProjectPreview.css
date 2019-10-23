@@ -1,12 +1,3 @@
-.project-previews {
-  display: flex;
-  align-items: center;
-  width: 60%;
-  background-color: #F0EFED;
-  margin-left: 130px;
-  min-height: 900px;
-}
-
 .project-img {
   margin-top: 50px;
   display: flex;

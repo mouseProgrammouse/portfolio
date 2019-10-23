@@ -16,11 +16,11 @@ project:{
 }
 */
 const ProjectPreview = (props) => {
-  const { project, key } = props;
+  const { project, index, amount } = props;
 
   return (
-    <div className="project-previews">
-        <div className="preview" key={key}>
+        <div className="preview" key={index}>
+          <span className="index">{index+1}</span><span className="amount">{"/"+amount}</span>
           <div className="project-img">
             <img src={project.previewImg} alt={project.alt}/>
           </div>
@@ -36,13 +36,13 @@ const ProjectPreview = (props) => {
             </div>
           </div>
         </div>
-    </div>
   )
 }
 
 ProjectPreview.propTypes = {
-  projects: PropTypes.object.isRequired,
-  index: PropTypes.number.isRequired
+  project: PropTypes.object.isRequired,
+  index: PropTypes.number.isRequired,
+  amount: PropTypes.number.isRequired
 }
 
 export default ProjectPreview
