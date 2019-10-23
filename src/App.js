@@ -14,6 +14,7 @@ import MainDescription from './MainDescription'
 import Skills from './Skills'
 import EmailForm from './EmailForm'
 import ProjectPreview from './ProjectPreview'
+import ProjectsSlideShow from './ProjectsSlideShow'
 import './App.css'
 
 //add all free brands' icons from FontAwesome learn more https://github.com/FortAwesome/react-fontawesome
@@ -131,7 +132,7 @@ class App extends Component {
           <div className = "portfolio-page">
           <SocialAsideMenu socialMenuItems = {data.socialMenuItems}/>
           <AsideHeader header = {data.portfolioPage.header} />
-          <ProjectPreview projects= {data.portfolioPage.projects} />
+          <ProjectsSlideShow projects= {data.portfolioPage.projects} />
           <MainMenu activeLink = {this.props.location.pathname} menuItems = { data.topMenuItems }/>
           </div>
         )} />

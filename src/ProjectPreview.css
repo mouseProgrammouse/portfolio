@@ -11,7 +11,6 @@
   margin-top: 50px;
   display: flex;
   justify-content: center;
-  height: 100%;
   align-items: flex-start;
   z-index: -4;
   position: absolute;
@@ -69,7 +68,6 @@
 .project-description a {
   text-decoration: none;
   text-transform: uppercase;
-  line-height: 16px;
   font-weight: bold;
   color: #fff;
 }
