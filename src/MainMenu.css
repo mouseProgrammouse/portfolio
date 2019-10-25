@@ -31,7 +31,9 @@
   justify-content: flex-end;
 }
 
-.main-menu a:hover, a:focus, a:active {
+.main-menu a:hover,
+.main-menu a:focus,
+.main-menu a:active {
   transform: scale(0.9);
   -webkit-transform: scale(0.9);
 }
