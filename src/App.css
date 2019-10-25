@@ -25,7 +25,7 @@ h5 {
 
 .app {
     max-width: 1045px;
-    min-height: 900px;
+    height: 100vh;
     position: relative;
     margin: 0 auto;
 }
@@ -78,4 +78,16 @@ h5 {
 
 .portfolio-page .main-menu{
   width: 60%;
+}
+
+@media screen and (max-height: 700px) {
+  .app {
+    max-height: 700px;
+  }
+}
+
+@media screen {
+  .app {
+    max-height: 900px;
+  }
 }
