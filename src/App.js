@@ -34,33 +34,33 @@ const data = {
   },
   portfolioPage: {
     header: {part1: 'alenaTimofeeva.', part2: 'Portfolio;'},
-    projects: [{header: 'Website for knitting studio', description: 'I created a landing page for a tiny knitting studio in a Ukrainian city. I implemented pretty much everything: design, CSS, coding, buying a domain and even deploying (AWS). Project on GitHub and Behance.',
+    projects: [{header: '01 Website for knitting studio', description: 'I created a landing page for a tiny knitting studio in a Ukrainian city. I implemented pretty much everything: design, CSS, coding, buying a domain and even deploying (AWS). Project on GitHub and Behance.',
     previewImg: projectStudioImg,
     alt: '',
     links : [
       {className: 'button active', text: 'Live page', iconClass: '', icon: '', link: '#'},
       {className: 'icon', text: '', iconClass: 'fab', icon: 'github-alt', link: '#'},
       {className: 'icon', text: '', iconClass: 'fab', icon: 'behance', link: '#'}
-    ]}]
-//   },
-//   {header: 'Website for knitting studio', description: 'I created a landing page for a tiny knitting studio in a Ukrainian city. I implemented pretty much everything: design, CSS, coding, buying a domain and even deploying (AWS). Project on GitHub and Behance.',
-//   previewImg: projectStudioImg,
-//   alt: '',
-//   links : [
-//     {className: 'button active', text: 'Live page', iconClass: '', icon: '', link: '#'},
-//     {className: 'icon', text: '', iconClass: 'fab', icon: 'github-alt', link: '#'},
-//     {className: 'icon', text: '', iconClass: 'fab', icon: 'behance', link: '#'}
-//   ]
-// },
-// {header: 'Website for knitting studio', description: 'I created a landing page for a tiny knitting studio in a Ukrainian city. I implemented pretty much everything: design, CSS, coding, buying a domain and even deploying (AWS). Project on GitHub and Behance.',
-// previewImg: projectStudioImg,
-// alt: '',
-// links : [
-//   {className: 'button active', text: 'Live page', iconClass: '', icon: '', link: '#'},
-//   {className: 'icon', text: '', iconClass: 'fab', icon: 'github-alt', link: '#'},
-//   {className: 'icon', text: '', iconClass: 'fab', icon: 'behance', link: '#'}
-// ]
-// }]
+    ]
+   },
+   {header: '02 Website for knitting studio', description: 'I created a landing page for a tiny knitting studio in a Ukrainian city. I implemented pretty much everything: design, CSS, coding, buying a domain and even deploying (AWS). Project on GitHub and Behance.',
+   previewImg: projectStudioImg,
+   alt: '',
+   links : [
+     {className: 'button active', text: 'Live page', iconClass: '', icon: '', link: '#'},
+     {className: 'icon', text: '', iconClass: 'fab', icon: 'github-alt', link: '#'},
+     {className: 'icon', text: '', iconClass: 'fab', icon: 'behance', link: '#'}
+   ]
+ },
+ {header: '03 Website for knitting studio', description: 'I created a landing page for a tiny knitting studio in a Ukrainian city. I implemented pretty much everything: design, CSS, coding, buying a domain and even deploying (AWS). Project on GitHub and Behance.',
+ previewImg: projectStudioImg,
+ alt: '',
+ links : [
+   {className: 'button active', text: 'Live page', iconClass: '', icon: '', link: '#'},
+   {className: 'icon', text: '', iconClass: 'fab', icon: 'github-alt', link: '#'},
+   {className: 'icon', text: '', iconClass: 'fab', icon: 'behance', link: '#'}
+ ]
+ }]
   },
   resumePage: {
     header: {part1: 'alenaTimofeeva.', part2: 'Resume;'},
@@ -149,7 +149,7 @@ class App extends Component {
           <div className = "portfolio-page">
           <SocialAsideMenu socialMenuItems = {data.socialMenuItems}/>
           <AsideHeader header = {data.portfolioPage.header} />
-          <ProjectsSlideShow projects= {data.portfolioPage.projects} />
+          <ProjectsSlideShow projects= {data.portfolioPage.projects} amount={data.portfolioPage.projects.length}/>
           <MainMenu activeLink = {this.props.location.pathname} menuItems = { data.topMenuItems }/>
           </div>
         )} />

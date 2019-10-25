@@ -9,6 +9,10 @@
     min-height: 900px;
 }
 
+.hide {
+  display: none;
+}
+
 .projects-slideshow-container .counters {
   font-family: 'Work Sans', Helvetica, sans-serif;
   font-weight: bold;
