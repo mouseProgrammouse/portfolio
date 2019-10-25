@@ -56,6 +56,15 @@
   background-color: #3e3c42;
   justify-content: center;
   align-items: center;
+  border: none;
+}
+
+.projects-slideshow-container .icon:disabled {
+  background-color: #F0EFED;
+}
+
+.projects-slideshow-container .icon:focus {
+  outline: none;
 }
 
 .projects-slideshow-container .icon svg {

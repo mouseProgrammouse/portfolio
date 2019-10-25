@@ -33,10 +33,12 @@ class ProjectsSlideShow extends Component {
       <div className="projects-slideshow-container">
           <ProjectPreview project={projects[this.state.currentSlideIndex]} index={this.state.currentSlideIndex+1} amount={amount}/>
         <div className="switchers">
-          <button onClick={() => this.prevSlide()} className="icon prev">
+          <button onClick={() => this.prevSlide()} className="icon prev" disabled={
+            this.state.currentSlideIndex === 0}>
             <FontAwesomeIcon icon={['fas', 'caret-left']} />
           </button>
-          <button onClick={() => this.nextSlide()} className="icon next">
+          <button onClick={() => this.nextSlide()} className="icon next" disabled={
+            this.state.currentSlideIndex === amount-1}>
             <FontAwesomeIcon icon={['fas', 'caret-right']} />
             </button>
         </div>
