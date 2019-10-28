@@ -91,3 +91,61 @@ h5 {
     max-height: 900px;
   }
 }
+
+@media screen and (max-width: 1045px){
+  .app {
+    width: 100vw;
+    background-color: red;
+  }
+
+  .main-page img {
+    margin-left: 58px;
+  }
+
+  .social-media-menu {
+    top: 0;
+    left: 10px;
+  }
+
+  .main-page .main-header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 888px){
+  .app {
+    width: 100vw;
+    background-color: turquoise;
+  }
+
+  .main-page .main-description {
+    margin-top: 40%;
+  }
+
+  .main-page .description {
+    margin: 21px 5px 21px 5px;
+  }
+
+  .main-page .main-description a {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .main-page .main-description .links {
+    flex-flow: column;
+  }
+
+  .main-page img {
+    margin-left: 58px;
+  }
+
+  .social-media-menu {
+    top: 0;
+    left: 10px;
+  }
+
+  .main-header {
+    display: none;
+  }
+}
