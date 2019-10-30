@@ -75,7 +75,7 @@
     display: flex;
     justify-content: flex-start;
     flex-flow: column;
-    width: 240px;
+    width: 180px;
     background-color: #F0EFED;
     position: fixed;
     z-index: 10;
@@ -111,6 +111,11 @@
   .main-menu a:active {
     transform: scale(1);
     -webkit-transform: scale(1);
+  }
+
+  .main-menu .exit a svg{
+    display: inline-block;
+    margin: 0 11px;
   }
 }
 

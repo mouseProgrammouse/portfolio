@@ -149,3 +149,13 @@ h5 {
     display: none;
   }
 }
+
+@media screen and (max-width: 660px) {
+  .app {
+    background-color: green;
+  }
+
+  .main-page img {
+    display:none;
+  }
+}
