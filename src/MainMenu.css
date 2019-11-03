@@ -46,7 +46,11 @@
   display: none;
 }
 
-
+@media screen and (min-width: 880px) {
+  .main-menu ul {
+    display: flex;
+  }
+}
 
 @media screen and (max-width: 880px) {
   .main-menu {
@@ -124,5 +128,5 @@
 }
 
 .main-menu .show {
-  display: block;
+  display: flex;
 }

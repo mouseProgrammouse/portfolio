@@ -14,7 +14,7 @@ class MainMenu extends Component {
 
   constructor( props ) {
     super(props);
-    this.state = { menu : "hide" };
+    this.state = { menu : "show" };
   }
 
   showMenu (e) {
@@ -29,6 +29,23 @@ class MainMenu extends Component {
     this.setState({
       menu: "hide"
     });
+  }
+
+  resize() {
+    //if tablet (<=880px)
+    if (window.innerWidth <= 880)
+      this.setState({
+          menu: "hide"
+        });
+    else
+      this.setState({
+        menu: "show"
+      });
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.resize.bind(this));
+    this.resize();
   }
 
   render () {
@@ -61,4 +78,4 @@ MainMenu.propTypes = {
   menuItems: PropTypes.array.isRequired
 }
 
-export default MainMenu
+export default MainMenu;

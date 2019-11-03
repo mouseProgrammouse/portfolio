@@ -8,6 +8,7 @@ import SocialAsideMenu from './SocialAsideMenu'
 import AsideHeader from './AsideHeader'
 import Img from './Img'
 import mainImg from './img/main-img.png'
+import projectResumeImg from './img/project_resume.png'
 import projectStudioImg from './img/project_studio.png'
 import projectHiking from './img/project_hiking.png'
 import OwnerInfo from './OwnerInfo'
@@ -52,7 +53,7 @@ const data = {
    ]
  },
  {header: '03 Website for knitting studio', description: 'I created a landing page for a tiny knitting studio in a Ukrainian city. I implemented pretty much everything: design, CSS, coding, buying a domain and even deploying (AWS). Project on GitHub and Behance.',
- previewImg: projectStudioImg,
+ previewImg: projectResumeImg,
  alt: '',
  links : [
    {className: 'button active', text: 'Live page', iconClass: '', icon: '', link: '#'},
