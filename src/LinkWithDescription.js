@@ -9,14 +9,14 @@ const LinkWithDescription = (props) => {
   return (
     <div className="link-to">
       <p>{description}</p>
-      <Link to="#">{link.text}</Link>
+      <Link to={link.to}>{link.text}</Link>
     </div>
   );
 }
 
-const LinkWithDescription.propTypes = {
+LinkWithDescription.propTypes = {
   description: PropTypes.string.isRequired,
-  link: PropTypes.array.isRequired
+  link: PropTypes.object.isRequired
 }
 
 export default LinkWithDescription
