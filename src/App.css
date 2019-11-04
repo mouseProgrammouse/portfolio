@@ -90,6 +90,10 @@ h5 {
   .app {
     max-height: 900px;
   }
+
+  .projects-slideshow-container {
+    max-height: 900px;
+  }
 }
 
 @media only screen and (max-height: 900px){

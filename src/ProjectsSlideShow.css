@@ -6,7 +6,7 @@
     width: 60%;
     background-color: #F0EFED;
     margin-left: 130px;
-    min-height: 900px;
+    height: 100vh;
 }
 
 .hide {
