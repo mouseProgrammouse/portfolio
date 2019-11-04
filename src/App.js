@@ -66,7 +66,7 @@ const data = {
     header: {part1: 'alenaTimofeeva.', part2: 'Resume;'},
     mainInfo: {name: 'Alena Timofeeva', occupation: 'front-end developer'},
     smInfo: [{description: 'alyona.tymofieieva@gmail.com', link: '', iconClass: 'fas', icon: 'envelope-open', className : ""},
-            {description: 'https://www.linkedin.com/in/alena-timofeeva/', link: 'https://www.linkedin.com/in/alena-timofeeva/', iconClass: 'fab', icon: 'linkedin', className : "active"},
+            {description: 'linkedin.com/in/alena-timofeeva', link: 'https://www.linkedin.com/in/alena-timofeeva/', iconClass: 'fab', icon: 'linkedin', className : "active"},
             {description: 'Bay Area, California', link: '', iconClass: 'fas', icon: 'map-marker', className : ""},],
     skills: {
       technical: [{cat:'Front-End', description: 'HTML5, CSS3, Bootstrap, JavaScript, ECMAScript 6, jQuery, React'},
