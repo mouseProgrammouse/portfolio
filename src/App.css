@@ -150,11 +150,11 @@ h5 {
   }
 
   .email-form {
-    width: 70%;
+    width: 68%;
   }
 
-  .email-form .flash-message {
-    margin: 50px 0;
+  .email-form {
+    padding-top: 10px;
   }
 
   .portfolio-page .projects-slideshow-container {
