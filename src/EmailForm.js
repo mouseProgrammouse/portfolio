@@ -11,7 +11,7 @@ class EmailForm extends Component {
 
   constructor (props) {
     super(props);
-    this.state = { flashMessage: '', className: '' }
+    this.state = { flashMessage: 'Woohoo! Email successfully sent! ✨', className: 'success' }
   }
 
   handleSubmit = (event) => {

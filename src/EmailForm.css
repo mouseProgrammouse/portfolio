@@ -1,5 +1,5 @@
 .email-form {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -100,7 +100,7 @@
 }
 
 .email-form .flash-message {
-  margin: 15% 0;
+  margin: 10% 0;
   content: "";
   display: flex;
   height: 38px;

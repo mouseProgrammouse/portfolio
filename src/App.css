@@ -176,6 +176,16 @@ h5 {
     margin: 58px 0 14px 0;
   }
 
+  .email-form .flash-message {
+    position: fixed;
+    padding: 1px 25px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+  }
+
   .portfolio-page .projects-slideshow-container {
     width: 100%;
     flex-flow: column;
