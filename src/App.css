@@ -97,7 +97,6 @@ h5 {
 @media screen and (max-width: 1045px){
   .app {
     width: 100vw;
-    background-color: red;
   }
 
   .main-page img {
@@ -114,10 +113,9 @@ h5 {
   }
 }
 
-@media screen and (max-width: 888px){
+@media screen and (max-width: 880px){
   .app {
     width: 100vw;
-    background-color: turquoise;
   }
 
   .main-page .main-description {
@@ -154,13 +152,44 @@ h5 {
   .email-form {
     width: 70%;
   }
+
+  .portfolio-page .projects-slideshow-container {
+    width: 100%;
+    flex-flow: column;
+  }
+
+  .portfolio-page .main-menu {
+    width: auto;
+  }
+
+  .portfolio-page .projects-slideshow-container .preview {
+    width: 100%;
+    margin-bottom: 58px;
+  }
+
+  .portfolio-page .preview .project-img {
+    position: static;
+  }
+
+  .portfolio-page .preview .project-description {
+    margin: 0 auto;
+  }
+
+  .portfolio-page .projects-slideshow-container {
+    background-color: #fff;
+    margin: 0 58px;
+  }
+
+  .portfolio-page .projects-slideshow-container .counters {
+    right: 5px;
+  }
+
+  .portfolio-page .projects-slideshow-container .switchers {
+    position: static;
+  }
 }
 
 @media screen and (max-width: 660px) {
-  .app {
-    background-color: green;
-  }
-
   .main-page img {
     display:none;
   }
@@ -168,5 +197,9 @@ h5 {
   .email-form .form .first-name,
   .email-form .form .last-name{
     width: 100%;
+  }
+
+  .portfolio-page .projects-slideshow-container {
+    margin: 0 18px;
   }
 }
