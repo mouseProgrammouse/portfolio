@@ -206,11 +206,16 @@ h5 {
 
   .resume-page .owner-info
   {
-    margin: 10px 58px 0 88px;
+    margin: 0 48px 0 68px;
+    padding-top: 10px;
   }
 
   .resume-page .skills {
-    padding: 27px 58px 130px 88px;
+    padding: 27px 48px 130px 68px;
+  }
+
+  .resume-page .skills .left-section {
+    width: 35%;
   }
 
   .portfolio-page .projects-slideshow-container .project-img {
@@ -238,5 +243,47 @@ h5 {
 
   .email-form .flash-message {
     margin: 0 0;
+  }
+
+  .resume-page .skills .left-section {
+    display: none;
+  }
+
+  .resume-page .skills .right-section {
+    width: 100%;
+  }
+
+  .resume-page .skills .skills-with-certifications,
+  .resume-page .skills .skills-with-date-and-description {
+    display: none;
+  }
+
+  .resume-page .owner-info {
+    flex-flow: column;
+    align-items: baseline;
+    border-bottom: none;
+    padding-top: 58px;
+  }
+
+  .resume-page .owner-info .main-info,
+  .resume-page .owner-info .social-info {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .resume-page .owner-info {
+    margin: 0 38px 0 68px;
+  }
+
+  .resume-page .owner-info .social-info ul {
+    padding-inline-start: 0;
+  }
+
+  .resume-page .owner-info .social-info li {
+    flex-flow: row-reverse;
+  }
+
+  .resume-page .owner-info .social-info .icon {
+    margin: 5px 5px 5px 0;
   }
 }
