@@ -98,7 +98,7 @@ const data = {
               {description:'programmouse', link: 'https://www.behance.net/programmouse', iconClass: 'fab', icon: 'behance', className: ''},],
       extra: {description: 'drawing, lettering, ceramic, photography'}
     },
-    mobileContent : { description:"For more information please visit my LinkedIn profile or desktop version of website",
+    mobileContent : { description:"For more information about me, my education, skills and experience please visit my LinkedIn profile or desktop version of website",
     linkToProfile: {to:"https://www.linkedin.com/in/alena-timofeeva/", text:"visit LinkedIn"}
     }
   },

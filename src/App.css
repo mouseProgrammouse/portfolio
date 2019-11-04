@@ -82,6 +82,10 @@ h5 {
   width: 60%;
 }
 
+.resume-page .link-to {
+  display: none;
+}
+
 @media only screen and (min-height: 900px){
   .app {
     max-height: 900px;
@@ -224,6 +228,10 @@ h5 {
 }
 
 @media screen and (max-width: 660px) {
+  .social-media-menu {
+    left: 0;
+  }
+
   .main-page img {
     display:none;
   }
@@ -273,6 +281,11 @@ h5 {
 
   .resume-page .owner-info {
     margin: 0 38px 0 68px;
+    padding-bottom: 0;
+  }
+
+  .resume-page .owner-info .main-info h2 {
+    margin-bottom: 0;
   }
 
   .resume-page .owner-info .social-info ul {
@@ -283,7 +296,25 @@ h5 {
     flex-flow: row-reverse;
   }
 
+  .resume-page .about h4 {
+    margin-bottom: 8px;
+  }
+
   .resume-page .owner-info .social-info .icon {
     margin: 5px 5px 5px 0;
+  }
+
+  .resume-page .skills {
+    padding: 0 48px 0 68px;
+  }
+
+  .resume-page .link-to {
+    display: flex;
+    padding: 0 48px 0 68px;
+    margin: 0;
+  }
+
+  .resume-page .link-to p {
+    margin: 4px 0 14px 0;
   }
 }
