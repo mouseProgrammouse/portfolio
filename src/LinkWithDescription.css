@@ -1,0 +1,17 @@
+.link-to {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  margin: 58px 58px;
+}
+
+.link-to a {
+  text-decoration: none;
+  background-color: #ffbb1a;
+  text-transform: uppercase;
+  line-height: 16px;
+  color: #3e3c42;
+  font-weight: bold;
+  padding: 11px 25px;
+  font-size: 14px;
+}
