@@ -46,7 +46,7 @@ h5 {
   display: block;
   margin-left: 130px;
   width: 44%;
-  height: 100%;
+  height: 100vh;
 }
 
 .decoration {
@@ -87,11 +87,9 @@ h5 {
 }
 
 @media only screen and (min-height: 900px){
-  .app {
-    max-height: 900px;
-  }
-
-  .projects-slideshow-container {
+  .app,
+  .main-page img,
+  .projects-slideshow-container  {
     max-height: 900px;
   }
 }
