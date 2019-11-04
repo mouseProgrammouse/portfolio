@@ -150,6 +150,10 @@ h5 {
   .main-header {
     display: none;
   }
+
+  .email-form {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 660px) {
@@ -159,5 +163,10 @@ h5 {
 
   .main-page img {
     display:none;
+  }
+
+  .email-form .form .first-name,
+  .email-form .form .last-name{
+    width: 100%;
   }
 }
