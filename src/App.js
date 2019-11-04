@@ -147,7 +147,6 @@ class App extends Component {
             <OwnerInfo mainInfo = {data.resumePage.mainInfo} smInfo = {data.resumePage.smInfo}/>
             <Skills skills={data.resumePage.skills}/>
             <LinkWithDescription description={data.resumePage.mobileContent.description} link={data.resumePage.mobileContent.linkToProfile}/>
-            <span className="decoration">;</span>
           </div>
         )} />
         <Route exact path = '/portfolio' render = { () => (
