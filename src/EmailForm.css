@@ -4,7 +4,7 @@
 }
 
 .email-form h2{
-  margin: 15% 0 21px 0;
+  margin: 5% 0 21px 0;
 }
 
 .email-form .description {
@@ -100,24 +100,21 @@
 }
 
 .email-form .flash-message {
-  margin: 100px 0;
+  margin: 15% 0;
   content: "";
   display: flex;
   height: 38px;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  top: 0;
-  width: 70%;
 }
 
 .email-form .flash-message.success {
-  background-color: #97F3FF;
+  background-color: #A4F4FC;
   animation: popup 0.4s;
 }
 
 .email-form .flash-message.error {
-  background-color: #FF7D61;
+  background-color: #F79595;
   animation: popup 0.4s;
 }
 
