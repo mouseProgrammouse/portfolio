@@ -82,19 +82,19 @@ h5 {
   width: 60%;
 }
 
-@media screen and (max-height: 700px) {
-  .app {
-    max-height: 700px;
-  }
-}
-
-@media screen {
+@media only screen and (min-height: 900px){
   .app {
     max-height: 900px;
   }
 }
 
-@media screen and (max-width: 1045px){
+@media only screen and (max-height: 900px){
+  .app {
+    max-height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 1045px){
   .app {
     width: 100vw;
   }
@@ -113,7 +113,7 @@ h5 {
   }
 }
 
-@media screen and (max-width: 880px){
+@media only screen and (max-width: 880px){
   .app {
     width: 100vw;
   }
@@ -157,9 +157,14 @@ h5 {
     padding-top: 10px;
   }
 
+  .email-form h2 {
+    margin: 58px 0 14px 0;
+  }
+
   .portfolio-page .projects-slideshow-container {
     width: 100%;
     flex-flow: column;
+    justify-content: flex-start;
   }
 
   .portfolio-page .main-menu {
@@ -168,11 +173,17 @@ h5 {
 
   .portfolio-page .projects-slideshow-container .preview {
     width: 100%;
-    margin-bottom: 58px;
+    margin-bottom: 38px;
+  }
+
+  .portfolio-page .projects-slideshow-container .preview {
+    margin-top: 58px;
   }
 
   .portfolio-page .preview .project-img {
     position: static;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .portfolio-page .preview .project-description {
@@ -186,6 +197,7 @@ h5 {
 
   .portfolio-page .projects-slideshow-container .counters {
     right: 5px;
+    top: 10px;
   }
 
   .portfolio-page .projects-slideshow-container .switchers {
@@ -199,6 +211,10 @@ h5 {
 
   .resume-page .skills {
     padding: 27px 58px 130px 88px;
+  }
+
+  .portfolio-page .projects-slideshow-container .project-img {
+    margin-top: 0;
   }
 }
 
@@ -214,6 +230,10 @@ h5 {
 
   .portfolio-page .projects-slideshow-container {
     margin: 0 18px;
+  }
+
+  .portfolio-page .projects-slideshow-container .project-img {
+    margin-top: 0;
   }
 
   .email-form .flash-message {
