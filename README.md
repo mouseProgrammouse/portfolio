@@ -1,6 +1,8 @@
 # Personal portfolio
-...
- 
+   <p align="center"><img src="https://raw.githubusercontent.com/mouseProgrammouse/portfolio/master/Portfolio_preview.png" width="480"/></p>
+   
+   ...
+
 ## Table of Contents
 
 * [Design](#design)
@@ -13,10 +15,7 @@
   **Responsive:** The application is usable across modern desktop, tablet, and phone browsers and looks good at different screen sizes. CSS breakpoints are used for switching between designs.
   
   **Design Inspiration:**
-  The main inspiration for this site came from...
-  
-  <p align="center"><img src="https://raw.githubusercontent.com/mouseProgrammouse/portfolio/master/Portfolio_preview.png" width="480"/></p>
-  
+  The main inspiration for this site came from...  
   
   **Mokup:**
   For the design prototype I used Figma. See full [project](https://www.figma.com/file/JnUa51UPcYaqSIDbHqv1Ka/Resume-web?node-id=0%3A1) at <img src="https://raw.githubusercontent.com/mouseProgrammouse/readme/master/icons/figma-logo.png" width="28"/>
