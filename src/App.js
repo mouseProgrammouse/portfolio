@@ -41,25 +41,24 @@ const data = {
     previewImg: projectStudioImg,
     alt: '',
     links : [
-      {className: 'button active', text: 'Live page', iconClass: '', icon: '', link: '#'},
-      {className: 'icon', text: '', iconClass: 'fab', icon: 'github-alt', link: '#'},
-      {className: 'icon', text: '', iconClass: 'fab', icon: 'behance', link: '#'}
+      {className: 'button active', text: 'Live page', iconClass: '', icon: '', link: 'http://trikotag.ck.ua/'},
+      {className: 'icon', text: '', iconClass: 'fab', icon: 'github-alt', link: 'https://github.com/mouseProgrammouse/studioTatiana'},
+      {className: 'icon', text: '', iconClass: 'fab', icon: 'behance', link: 'https://www.behance.net/gallery/81159923/Landing-page-for-a-knitting-studio'}
     ]
    },
    {header: 'Hiking in Ireland', technologies: 'UX/UI, Photoshop, Figma', description: 'The design inspired by the natural attractions of Ireland.  With my design, I wanted to inspire people to visit such a beautiful country.',
    previewImg: projectHiking,
    alt: '',
    links : [
-     {className: 'icon', text: '', iconClass: 'fab', icon: 'behance', link: '#'}
+     {className: 'icon', text: '', iconClass: 'fab', icon: 'behance', link: 'https://www.behance.net/gallery/81319035/Discover-Ireland'}
    ]
  },
  {header: 'Personal portfolio', technologies: ' UX/UI, Photoshop, Figma, CSS3, CSS Animation,  HTML5, React, Analytics, AWS, hosting, emailJS', description: 'For my portfolio, I chose a clean and elegant design. I wanted to make the template simple to highlight my works. The main inspiration came from JS syntax.',
  previewImg: projectResumeImg,
  alt: '',
  links : [
-   {className: 'button active', text: 'Live page', iconClass: '', icon: '', link: '#'},
-   {className: 'icon', text: '', iconClass: 'fab', icon: 'github-alt', link: '#'},
-   {className: 'icon', text: '', iconClass: 'fab', icon: 'behance', link: '#'}
+   {className: 'button active', text: 'Live page', iconClass: '', icon: '', link: 'https://alena.dev'},
+   {className: 'icon', text: '', iconClass: 'fab', icon: 'github-alt', link: 'https://github.com/mouseProgrammouse/portfolio'}
  ]
  }]
   },
