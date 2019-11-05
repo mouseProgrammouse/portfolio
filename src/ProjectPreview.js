@@ -7,6 +7,7 @@ import'./ProjectPreview.css'
 /**
 project:{
   header: 'Website for...',
+  technologies: 'React,...',
   description: 'Lorem ipsum dolor sit amet...',
   links : [
     {className: 'button active', text: 'Life page', iconClass: '', icon: '', link: '#'},
@@ -28,7 +29,8 @@ const ProjectPreview = (props) => {
           </div>
           <div className="project-description">
             <h2>{project.header}</h2>
-            <p>{project.description}</p>
+            <p className="technologies">{project.technologies}</p>
+            <p className="description">{project.description}</p>
             <div className="links">
               {project.links.map((link,index) => (
                 <Link key={index} className={link.className} to={link.link}>

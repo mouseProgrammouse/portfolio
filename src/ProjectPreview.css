@@ -17,17 +17,24 @@
   z-index: 2;
 }
 .project-description h2 {
-  margin: 20px 0;
+  margin: 18px 0;
 }
 
-.project-description p {
-  margin: 20px 0 24px 0;
+.project-description .description {
+  margin: 15px 0;
   line-height: 165%;
+}
+
+.project-description .technologies {
+  font-weight: 900;
+  font-size: 12px;
+  color: #3E3C42;
+  margin-bottom: 15px;
 }
 
 .project-description .links {
   display: flex;
-  flex: row;
+  flex-flow: row;
   align-items: center;
 }
 

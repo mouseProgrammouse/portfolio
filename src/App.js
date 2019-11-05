@@ -37,7 +37,7 @@ const data = {
   },
   portfolioPage: {
     header: {part1: 'alenaTimofeeva.', part2: 'Portfolio;'},
-    projects: [{header: '01 Website for knitting studio', description: 'I created a landing page for a tiny knitting studio in a Ukrainian city. I implemented pretty much everything: design, CSS, coding, buying a domain and even deploying (AWS). Project on GitHub and Behance.',
+    projects: [{header: 'Knitting studio', technologies: 'UX/UI, Photoshop, Figma, Illustrator, CSS, HTML, jQuery, Google Maps API, Analytics, SEO, AWS, hosting', description: 'Multilanguage website for the tiny knitting studio in the heart of Ukraine. Inspiration for the design came from the day-to-day work of the studio.',
     previewImg: projectStudioImg,
     alt: '',
     links : [
@@ -46,14 +46,14 @@ const data = {
       {className: 'icon', text: '', iconClass: 'fab', icon: 'behance', link: '#'}
     ]
    },
-   {header: '02 Website for knitting studio', description: 'I created a landing page for a tiny knitting studio in a Ukrainian city. I implemented pretty much everything: design, CSS, coding, buying a domain and even deploying (AWS). Project on GitHub and Behance.',
+   {header: 'Hiking in Ireland', technologies: 'UX/UI, Photoshop, Figma', description: 'The design inspired by the natural attractions of Ireland.  With my design, I wanted to inspire people to visit such a beautiful country.',
    previewImg: projectHiking,
    alt: '',
    links : [
      {className: 'icon', text: '', iconClass: 'fab', icon: 'behance', link: '#'}
    ]
  },
- {header: '03 Website for knitting studio', description: 'I created a landing page for a tiny knitting studio in a Ukrainian city. I implemented pretty much everything: design, CSS, coding, buying a domain and even deploying (AWS). Project on GitHub and Behance.',
+ {header: 'Personal portfolio', technologies: ' UX/UI, Photoshop, Figma, CSS3, CSS Animation,  HTML5, React, Analytics, AWS, hosting, emailJS API, Font Awesome', description: 'For my portfolio, I chose a clean and elegant design. I wanted to make the template simple to highlight my works. The main inspiration came from JS syntax.',
  previewImg: projectResumeImg,
  alt: '',
  links : [
