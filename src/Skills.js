@@ -17,8 +17,8 @@ const Skills = (props) => {
     <div className="skills">
       <div className="left-section">
         <SkillsWithDescription title={'Technical skills'} skills={skills.technical} />
-        <SkillsWithLevel title={'Language'} skills={skills.languages}/>
         <SkillsWithLevel title={'Soft skills'} skills={skills.softSkills}/>
+        <SkillsWithLevel title={'Language'} skills={skills.languages}/>
         <SMLinks title={'Links'} links={skills.links} />
         <SkillDescription title={'Extra'} description={skills.extra.description}/>
       </div>
