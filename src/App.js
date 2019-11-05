@@ -53,7 +53,7 @@ const data = {
      {className: 'icon', text: '', iconClass: 'fab', icon: 'behance', link: '#'}
    ]
  },
- {header: 'Personal portfolio', technologies: ' UX/UI, Photoshop, Figma, CSS3, CSS Animation,  HTML5, React, Analytics, AWS, hosting, emailJS API, Font Awesome', description: 'For my portfolio, I chose a clean and elegant design. I wanted to make the template simple to highlight my works. The main inspiration came from JS syntax.',
+ {header: 'Personal portfolio', technologies: ' UX/UI, Photoshop, Figma, CSS3, CSS Animation,  HTML5, React, Analytics, AWS, hosting, emailJS', description: 'For my portfolio, I chose a clean and elegant design. I wanted to make the template simple to highlight my works. The main inspiration came from JS syntax.',
  previewImg: projectResumeImg,
  alt: '',
  links : [
@@ -73,7 +73,7 @@ const data = {
       technical: [{cat:'Front-End', description: 'HTML5, CSS3, Bootstrap, JavaScript, ECMAScript 6, jQuery, React'},
                   {cat:'tools', description: 'Adobe Photoshop, Adobe Illustrator, Chrome DevTools, Figma'},
                   {cat:'Concepts', description: 'Restful API, MVC, SEO, UX, Responsive Web Design, Debugging, Testing, DOM, Agile & Scrum'},
-                  {cat:'other', description: 'Command line & Git, SQL (ANSI-92), Atlassian Jira, TFS'}],
+                  {cat:'other', description: 'Command line & Git, SQL (ANSI-92), Atlassian Jira, TFS, Trello, AWS(EC2, S3, Route53)'}],
       about: {header: 'Summary', description: 'I am a Front-End Developer from Bay Area, California. I create responsive web apps with cutting edge HTML & CSS features, modern JavaScript, and beautiful design. I am proficient in Photoshop & Illustrator. In my free time, I like to make ceramics and take stunning landscape photos.'},
       certifications: [{title: 'Front-End Web Developer Nanodegree Program', platform: 'udacity', link: 'https://confirm.udacity.com/TRDUDAKY', dates: 'Issued Jun 2018 – No Expiration Date'},
                       {title: 'web design Intensive course', platform: 'wdi.design', link: '#', dates: 'Issued nov 2018 – No Expiration Date'},
