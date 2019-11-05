@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PropTypes from 'prop-types'
 import './SMLinks.css'
@@ -18,12 +17,12 @@ const SMLinks = (props) => {
       <h4>{title}</h4>
       <ul>{links.map( (link, index) => (
           <li key={index} className={link.className}>
-            <Link className="link" to={link.link}>
+            <a className="link" href={link.link} target="_blank">
               <span className="icon">
                 <FontAwesomeIcon icon={[link.iconClass, link.icon]} />
               </span>
               <span className="description">{link.description}</span>
-            </Link>
+            </a>
           </li>))}
       </ul>
     </div>

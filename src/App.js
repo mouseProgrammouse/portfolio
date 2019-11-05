@@ -92,7 +92,7 @@ const data = {
                   {title: 'test engineer \\ Firstline software', date: 'December 2013 – October 2015', description: 'I was testing various web-based apps. A part of my duties was to create automated tools for testing and environment preparations.'},
                 {title: 'junior test engineer \\ korus consulting', date: 'August 2013 – december 2015', description: 'I was testing web-based medical records system with SQL and Document-oriented databases as storages.'}],
       links: [{description:'mouseProgrammouse', link: 'https://github.com/mouseProgrammouse', iconClass: 'fab', icon: 'github-alt', className: ''},
-              {description:'alena.dev', link: 'alena.dev', iconClass: 'fas', icon: 'link', className: ''},
+              {description:'alena.dev', link: 'https://alena.dev', iconClass: 'fas', icon: 'link', className: ''},
               {description:'Alena Timofeeva', link: 'https://www.linkedin.com/in/alena-timofeeva/', iconClass: 'fab', icon: 'linkedin', className: 'active'},
               {description:'programmouse', link: 'https://www.behance.net/programmouse', iconClass: 'fab', icon: 'behance', className: ''},],
       extra: {description: 'drawing, lettering, ceramic, photography'}

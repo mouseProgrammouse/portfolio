@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PropTypes from 'prop-types'
 import './SocialAsideMenu.css'
@@ -18,9 +17,9 @@ const SocialAsideMenu = (props) => {
       <ul>
         { socialMenuItems.map( (item, index) => (
           <li className={item.className} key={index}>
-            <Link to={item.link}>
+            <a href={item.link} target="_blank">
               <FontAwesomeIcon icon={[item.iconClass, item.icon]} />
-            </Link>
+            </a>
           </li>
             )
           )

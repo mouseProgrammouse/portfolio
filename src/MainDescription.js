@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
 import './MainDescription.css'
 
 const MainDescription = (props) => {
@@ -12,7 +11,7 @@ const MainDescription = (props) => {
       <p className="description">{description}</p>
       <div className = "links"> {
         links.map((link, index) => (
-          <Link key={index} className={link.className} to={link.link}>{link.linkTitle}</Link>
+          <a key={index} className={link.className} href={link.link}>{link.linkTitle}</a>
         ))
       }
       </div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PropTypes from 'prop-types'
 import'./ProjectPreview.css'
@@ -33,9 +32,9 @@ const ProjectPreview = (props) => {
             <p className="description">{project.description}</p>
             <div className="links">
               {project.links.map((link,index) => (
-                <Link key={index} className={link.className} to={link.link}>
+                <a key={index} className={link.className} href={link.link} target='_blank'>
                 {link.text || <FontAwesomeIcon icon={[link.iconClass, link.icon]} />}
-                </Link>
+                </a>
               ))}
             </div>
           </div>

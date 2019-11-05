@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PropTypes from 'prop-types'
 import './SocialInfo.css'
@@ -20,11 +19,11 @@ const SocialInfo = (props) => {
           <li key={index} className={item.className}>
             {item.description}
             {(item.link)?
-              (<Link to={item.link}>
+              (<a href={item.link} target='_blank'>
                   <span className="icon">
                     <FontAwesomeIcon icon={[item.iconClass, item.icon]} />
                   </span>
-                </Link>):
+                </a>):
               (<span className="icon">
                 <FontAwesomeIcon icon={[item.iconClass, item.icon]} />
               </span>)}
