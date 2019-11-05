@@ -15,7 +15,7 @@
   **Design Inspiration:**
   The main inspiration for this site came from...
   
-  <p align="center"><img src="" width="480"/></p>
+  <p align="center"><img src="https://raw.githubusercontent.com/mouseProgrammouse/portfolio/master/Portfolio_preview.png" width="480"/></p>
   
   
   **Mokup:**
