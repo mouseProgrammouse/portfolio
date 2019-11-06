@@ -17,7 +17,7 @@ const SMLinks = (props) => {
       <h4>{title}</h4>
       <ul>{links.map( (link, index) => (
           <li key={index} className={link.className}>
-            <a className="link" href={link.link} target="_blank">
+            <a className="link" href={link.link} target="_blank" rel="noopener noreferrer">
               <span className="icon">
                 <FontAwesomeIcon icon={[link.iconClass, link.icon]} />
               </span>

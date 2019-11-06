@@ -17,7 +17,7 @@ const SocialAsideMenu = (props) => {
       <ul>
         { socialMenuItems.map( (item, index) => (
           <li className={item.className} key={index}>
-            <a href={item.link} target="_blank">
+            <a href={item.link} target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={[item.iconClass, item.icon]} />
             </a>
           </li>

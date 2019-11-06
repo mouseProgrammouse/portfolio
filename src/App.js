@@ -53,7 +53,7 @@ const data = {
      {className: 'icon', text: '', iconClass: 'fab', icon: 'behance', link: 'https://www.behance.net/gallery/81319035/Discover-Ireland'}
    ]
  },
- {header: 'Personal portfolio', technologies: ' UX/UI, Photoshop, Figma, CSS3, CSS Animation,  HTML5, React, Analytics, AWS, hosting, emailJS', description: 'For my portfolio, I chose a clean and elegant design. I wanted to make the template simple to highlight my works. The main inspiration came from JavaScript syntax.',
+ {header: 'Personal portfolio', technologies: ' UX/UI, Photoshop, Figma, CSS3, CSS Animation,  HTML5, React, Analytics, AWS, hosting, emailJS', description: 'For my portfolio, I chose a clean and elegant design. I wanted to make the template simple to highlight my works. The main inspiration came from JS syntax.',
  previewImg: projectResumeImg,
  alt: '',
  links : [

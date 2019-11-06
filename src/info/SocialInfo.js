@@ -19,7 +19,7 @@ const SocialInfo = (props) => {
           <li key={index} className={item.className}>
             {item.description}
             {(item.link)?
-              (<a href={item.link} target='_blank'>
+              (<a href={item.link} target='_blank' rel="noopener noreferrer">
                   <span className="icon">
                     <FontAwesomeIcon icon={[item.iconClass, item.icon]} />
                   </span>

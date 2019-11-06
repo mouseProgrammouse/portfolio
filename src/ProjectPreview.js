@@ -32,7 +32,7 @@ const ProjectPreview = (props) => {
             <p className="description">{project.description}</p>
             <div className="links">
               {project.links.map((link,index) => (
-                <a key={index} className={link.className} href={link.link} target='_blank'>
+                <a key={index} className={link.className} href={link.link} target='_blank' rel="noopener noreferrer">
                 {link.text || <FontAwesomeIcon icon={[link.iconClass, link.icon]} />}
                 </a>
               ))}
