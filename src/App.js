@@ -26,14 +26,14 @@ const data = {
   mainPage: {
     header: {part1: 'alenaTimofeeva.', part2: 'About;'},
     content: {header: 'Hello, I’m Alena Timofeeva',
-              description: 'I am a Front-End Developer from Bay Area, California. I create responsive web apps with cutting edge HTML & CSS features, modern JavaScript, and beautiful design. I am proficient in Photoshop & Illustrator.'},
+              description: 'I am a front-end developer from the Bay Area, California. My goal is to bring beautiful design and elegant code to the web world. My main tools are HTML5, CSS3, ES6, and React.  Check out my portfolio, or let\'s stay in touch via LinkedIn.'},
     links: [{linkTitle: 'LinkedIn', link: 'https://www.linkedin.com/in/alena-timofeeva/', className : 'selected'},
             {linkTitle: 'Portfolio', link: '/portfolio', className : ''}]
   },
   getInTouch: {
     header: {part1: 'alenaTimofeeva.', part2: 'EmailMe;'},
     title: 'Get in touch',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...'
+    description: 'If you want to contact me, feel free to shoot me an email using the form below. I\'m open to any collaboration, whether you wish to hire me or start a project together.'
   },
   portfolioPage: {
     header: {part1: 'alenaTimofeeva.', part2: 'Portfolio;'},
@@ -88,7 +88,7 @@ const data = {
                     {title: 'Web application testing experience', level: ''},
                     {title: 'Creativity', level: ''}],
       education: [{title: 'itmo university', date: '', description: 'Bachelor’s degree, Computer Science (2008 – 2013)'}],
-      experience: [{title: 'front-end developer \\ Freelance', date: 'November 2017 – March 2018', description: ''},
+      experience: [{title: 'front-end developer \\ Freelance', date: 'November 2017 – March 2018', description: 'I was working on multiple projects with different customers. I primarily used Vue.js and jQuery. The main requirement was that the apps are usable across different browsers and look good on different screen sizes and devices. The work included design creation with Figma and Photoshop.'},
                   {title: 'test engineer \\ Firstline software', date: 'December 2013 – October 2015', description: 'I was testing various web-based apps. A part of my duties was to create automated tools for testing and environment preparations.'},
                 {title: 'junior test engineer \\ korus consulting', date: 'August 2013 – december 2015', description: 'I was testing web-based medical records system with SQL and Document-oriented databases as storages.'}],
       links: [{description:'mouseProgrammouse', link: 'https://github.com/mouseProgrammouse', iconClass: 'fab', icon: 'github-alt', className: ''},
