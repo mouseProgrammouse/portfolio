@@ -226,7 +226,7 @@ h5 {
   }
 
   .resume-page .skills {
-    padding: 27px 48px 130px 68px;
+    padding: 27px 48px 10px 68px;
   }
 
   .resume-page .skills .left-section {
@@ -345,5 +345,9 @@ h5 {
 
   .resume-page .link-to p {
     margin: 4px 0 14px 0;
+  }
+
+  .resume-page .download {
+    display: none;
   }
 }

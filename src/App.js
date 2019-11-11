@@ -100,7 +100,8 @@ const data = {
       extra: {description: 'drawing, lettering, ceramic, photography'}
     },
     downloadResume : {
-      description: 'tadatd ffssdf',
+      description: '',
+      fileName: 'resume_alena_timofeeva',
       src: Resume
     },
     mobileContent : { description:"For more information about me, my education, skills and experience please visit my LinkedIn profile or desktop version of website",
@@ -152,7 +153,7 @@ class App extends Component {
             <OwnerInfo mainInfo = {data.resumePage.mainInfo} smInfo = {data.resumePage.smInfo}/>
             <Skills skills={data.resumePage.skills}/>
             <LinkWithDescription description={data.resumePage.mobileContent.description} link={data.resumePage.mobileContent.linkToProfile}/>
-            <DownloadFile description={data.resumePage.downloadResume.description} src={data.resumePage.downloadResume.src}/>
+            <DownloadFile description={data.resumePage.downloadResume.description} src={data.resumePage.downloadResume.src} fileName={data.resumePage.downloadResume.fileName}/>
           </div>
         )} />
         <Route exact path = '/portfolio' render = { () => (

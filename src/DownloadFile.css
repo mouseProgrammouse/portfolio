@@ -1,0 +1,24 @@
+.download {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 28px 94px 10px 145px;
+  margin-bottom: 130px;
+}
+
+  .download p {
+    width: 60%;
+  }
+
+.download a {
+  background-color: #ffbb1a;
+  color: #3e3c42;
+  text-decoration: none;
+  text-transform: uppercase;
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  text-align: center;
+  padding: 11px 25px;
+}
