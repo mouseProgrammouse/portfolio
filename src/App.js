@@ -16,6 +16,7 @@ import MainDescription from './MainDescription'
 import Skills from './Skills'
 import EmailForm from './EmailForm'
 import ProjectsSlideShow from './ProjectsSlideShow'
+import DownloadFile from './DownloadFile'
 import LinkWithDescription from './LinkWithDescription'
 import './App.css'
 
