@@ -18,6 +18,7 @@ import EmailForm from './EmailForm'
 import ProjectsSlideShow from './ProjectsSlideShow'
 import DownloadFile from './DownloadFile'
 import LinkWithDescription from './LinkWithDescription'
+import Resume from './files/resume.pdf'
 import './App.css'
 
 //add all free brands' icons from FontAwesome learn more https://github.com/FortAwesome/react-fontawesome
@@ -98,6 +99,10 @@ const data = {
               {description:'programmouse', link: 'https://www.behance.net/programmouse', iconClass: 'fab', icon: 'behance', className: ''},],
       extra: {description: 'drawing, lettering, ceramic, photography'}
     },
+    downloadResume : {
+      description: 'tadatd ffssdf',
+      src: Resume
+    },
     mobileContent : { description:"For more information about me, my education, skills and experience please visit my LinkedIn profile or desktop version of website",
     linkToProfile: {to:"https://www.linkedin.com/in/alena-timofeeva/", text:"visit LinkedIn"}
     }
@@ -147,6 +152,7 @@ class App extends Component {
             <OwnerInfo mainInfo = {data.resumePage.mainInfo} smInfo = {data.resumePage.smInfo}/>
             <Skills skills={data.resumePage.skills}/>
             <LinkWithDescription description={data.resumePage.mobileContent.description} link={data.resumePage.mobileContent.linkToProfile}/>
+            <DownloadFile description={data.resumePage.downloadResume.description} src={data.resumePage.downloadResume.src}/>
           </div>
         )} />
         <Route exact path = '/portfolio' render = { () => (

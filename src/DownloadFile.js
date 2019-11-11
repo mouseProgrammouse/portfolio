@@ -6,7 +6,9 @@ const DownloadFile = (props) => {
   const { description, src } = props;
 
   return (
-    <div className="">
+    <div className="download">
+      <p>{description}</p>
+      <a href={src} download>Download</a>
     </div>);
 }
 
