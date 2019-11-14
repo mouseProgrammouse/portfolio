@@ -41,12 +41,14 @@ h5 {
   max-width: 1045px;
 }
 
-.main-page img {
+.main-page .img {
   flex: 45%;
   display: block;
   margin-left: 130px;
   width: 44%;
   height: 100vh;
+  background-position: center bottom;
+  background-size: cover;
 }
 
 .decoration {
@@ -88,9 +90,13 @@ h5 {
 
 @media only screen and (min-height: 900px){
   .app,
-  .main-page img,
+  .main-page .img,
   .projects-slideshow-container  {
     max-height: 900px;
+  }
+
+  .main-page .content {
+      width: 50%;
   }
 }
 
@@ -107,6 +113,9 @@ h5 {
     font-size: 38px;
   }
 
+  .main-page .content {
+      width: 50%;
+  }
 }
 
 @media only screen and (max-width: 1045px){
@@ -114,7 +123,11 @@ h5 {
     width: 100vw;
   }
 
-  .main-page img {
+  .main-page .content {
+      width: 50%;
+  }
+
+  .main-page .img {
     margin-left: 58px;
   }
 
@@ -134,7 +147,7 @@ h5 {
   }
 
   .main-page .main-description {
-    margin-top: 40%;
+    margin-top: 50%;
   }
 
   .main-page .description {
@@ -151,8 +164,12 @@ h5 {
     flex-flow: column;
   }
 
-  .main-page img {
+  .main-page .img {
     margin-left: 58px;
+  }
+
+  .main-page .content {
+      width: 50%;
   }
 
   .social-media-menu {
@@ -243,8 +260,13 @@ h5 {
     left: 0;
   }
 
-  .main-page img {
+  .main-page .img {
+    content: "";
     display:none;
+  }
+
+  .main-page .content {
+      width: 100%;
   }
 
   .email-form .form .first-name,

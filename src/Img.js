@@ -3,16 +3,17 @@ import PropTypes from 'prop-types'
 
 const Img = (props) => {
 
-  const { imgSrc, alt } = props;
+  const { imgSrc} = props;
 
   return (
-      <img src={imgSrc} alt={alt}/>
+      <div className="img"
+      style={{backgroundImage: `url(${imgSrc})`}}>
+      </div>
   );
 }
 
 Img.propTypes = {
   imgSrc: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired
 }
 
 export default Img
