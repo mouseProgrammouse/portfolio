@@ -11,6 +11,7 @@ import mainImg from './img/main-img.png'
 import projectResumeImg from './img/project_resume.png'
 import projectStudioImg from './img/project_studio.png'
 import projectHiking from './img/project_hiking.png'
+import projectToDo from './img/project_todo.png'
 import OwnerInfo from './OwnerInfo'
 import MainDescription from './MainDescription'
 import Skills from './Skills'
@@ -55,6 +56,13 @@ const data = {
      {className: 'icon', text: '', iconClass: 'fab', icon: 'behance', link: 'https://www.behance.net/gallery/81319035/Discover-Ireland'}
    ]
  },
+ {header: 'ToDo cards', technologies: 'UX/UI, Figma, CSS3, HTML5, React, Jasmine, Fetch API', description: 'This is a convenient todo-cards web app based on React for family needs. It uses lightweight backend through fetch API and can be deployed in 30 secs.',
+ previewImg: projectToDo,
+ alt: '',
+ links : [
+   {className: 'icon', text: '', iconClass: 'fab', icon: 'github-alt', link: 'https://github.com/mouseProgrammouse/todo'}
+ ]
+},
  {header: 'Personal portfolio', technologies: ' UX/UI, Photoshop, Figma, CSS3, CSS Animation,  HTML5, React, Analytics, AWS, hosting, emailJS', description: 'For my portfolio, I chose a clean and elegant design. I wanted to make the template simple to highlight my works. The main inspiration came from JS syntax.',
  previewImg: projectResumeImg,
  alt: '',
