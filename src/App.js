@@ -79,10 +79,10 @@ const data = {
             {description: 'linkedin.com/in/alena-timofeeva', link: 'https://www.linkedin.com/in/alena-timofeeva/', iconClass: 'fab', icon: 'linkedin', className : "active"},
             {description: 'Bay Area, California', link: '', iconClass: 'fas', icon: 'map-marker', className : ""},],
     skills: {
-      technical: [{cat:'Front-End', description: 'HTML5, CSS3, Bootstrap, JavaScript, ECMAScript 6, jQuery, Vue, React'},
+      technical: [{cat:'Front-End', description: 'HTML5, CSS3, Bootstrap, JavaScript, ECMAScript6, jQuery, Vue, React, Jasmine'},
                   {cat:'tools', description: 'Adobe Photoshop, Adobe Illustrator, Chrome DevTools, Figma'},
-                  {cat:'Concepts', description: 'Restful API, MVC, SEO, UX, Responsive Web Design, Debugging, Testing, DOM, Agile & Scrum'},
-                  {cat:'other', description: 'Command line & Git, SQL (ANSI-92), Atlassian Jira, TFS, Trello, AWS(EC2, S3, Route53)'}],
+                  {cat:'Concepts', description: 'Restful API, MVC, SEO, UX, Accessibility, Responsive Web Design,  Debugging, Testing, DOM, Agile & Scrum'},
+                  {cat:'other', description: 'Command line & Git, SQL (ANSI-92), Atlassian Jira, TFS, Trello, AWS (EC2, S3, Route53)'}],
       about: {header: 'Summary', description: 'I’m a self-taught front-end developer. Build site layouts and UI using modern HTML, CSS,  JS, jQuery, and MVC framework React. Experience with consuming different types of web services, REST APIs and JSON. I’m results-oriented. Leverage testing skills, sense of style and strong attention to detail in order to deliver high-quality web apps. Want to work in a dynamic, fast-paced, startup environment.'},
       certifications: [{title: 'Front-End Web Developer Nanodegree Program', platform: 'udacity', link: 'https://confirm.udacity.com/TRDUDAKY', dates: 'Issued Jun 2018 – No Expiration Date'},
                       {title: 'web design Intensive course', platform: 'wdi.design', link: '#', dates: 'Issued nov 2018 – No Expiration Date'},
