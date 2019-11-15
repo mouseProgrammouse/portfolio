@@ -56,7 +56,7 @@ const data = {
      {className: 'icon', text: '', iconClass: 'fab', icon: 'behance', link: 'https://www.behance.net/gallery/81319035/Discover-Ireland'}
    ]
  },
- {header: 'ToDo cards', technologies: 'UX/UI, Figma, CSS3, HTML5, React, Jasmine, Fetch API', description: 'This is a convenient todo-cards web app based on React for family needs. It uses lightweight backend through fetch API and can be deployed in 30 secs.',
+ {header: 'ToDo cards', technologies: 'UX/UI, Figma, CSS3, HTML5, React, Jasmine, Fetch API', description: 'This is a convenient todo-cards web app for family needs based on React. It uses a lightweight backend through fetch API and can be deployed in 30 secs.',
  previewImg: projectToDo,
  alt: '',
  links : [
