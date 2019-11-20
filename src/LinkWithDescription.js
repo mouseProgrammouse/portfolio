@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import './LinkWithDescription.css'
 
@@ -10,7 +9,7 @@ const LinkWithDescription = (props) => {
   return (
     <div className="link-to">
       <p>{description}</p>
-      <Link to={link.to}>{link.text}</Link>
+      <a href={link.to}>{link.text}</a>
     </div>
   );
 }
