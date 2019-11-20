@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
 import './SkillsWithCertification.css'
 
 /**
@@ -17,7 +16,7 @@ const SkillsWithCertification = (props) => {
       <h4>{title}</h4>
       {skills.map((skill, index)=>(
       <div key={index}>
-        <Link to={skill.link}><h5>{skill.title}</h5></Link>
+        <a href={skill.link} target='_blank' rel="noopener noreferrer"><h5>{skill.title}</h5></a>
         <span className="platform">{skill.platform}</span>
         <span className="dates">{skill.dates}</span>
       </div>))}

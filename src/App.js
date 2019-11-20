@@ -112,7 +112,7 @@ const data = {
       fileName: 'resume_alena_timofeeva',
       src: Resume
     },
-    mobileContent : { description:"For more information about me, my education, skills and experience please visit my LinkedIn profile or desktop version of website",
+    mobileContent : { description:"For more information about me, my education, skills and experience please visit my LinkedIn profile or desktop version of the website.",
     linkToProfile: {to:"https://www.linkedin.com/in/alena-timofeeva/", text:"visit LinkedIn"}
     }
   },
