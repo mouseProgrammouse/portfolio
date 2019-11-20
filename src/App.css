@@ -341,6 +341,7 @@ h5 {
 
   .resume-page .owner-info .social-info ul {
     padding-inline-start: 0;
+    margin-bottom: 10px;
   }
 
   .resume-page .owner-info .social-info li {
@@ -348,6 +349,7 @@ h5 {
   }
 
   .resume-page .about h4 {
+    margin-top: 0;
     margin-bottom: 8px;
   }
 
